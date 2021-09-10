@@ -15,12 +15,14 @@ If you've ever wondered how the ISAN code was made, look no further, because if 
 Memory Relays can be used in the same network to rename variables.  This allows for YOLOL-free display label adjustments as well as concise scripted FCU manipulations without having custom keybinds.  You'll need 2 memory chips as well and place them in the relay slots.  Wire both cable connections to the network as well.  Note the arrows indicating which chip will pass on its value to the other chip as the relays work in a single direction.  The fields are mapped in order, so 1st field of the input chip maps to the 1st field on the output chip.  See the [Memory Mapping table](relayed.md)
 
 Example Propellant calculation: instead of having to sum up and set the total stored propellant to eg `:Propellant`, you can use the Memory Relay to map `:GasNetworkStoredResource` to `:Propellant`.  
-Example FCU manipulation: you want `:roll=100` in a script to roll right and `:FCURotationalRoll` is just too long to fit on your line, you map `:roll` to `:FCURotationalRoll` and be done with it!
+Example FCU manipulation: you want `:roll=100` in a script to roll right and `:FCURotationalRoll` is just too long to fit on your line, you map `:roll` to `:FCURotationalRoll` and be done with it!  
 
 ## Global variables
 A lot of advanced scripts use global variables (the ones with a leading `:`) to share values between different chips.  Basic scripts use them too to listen for buttons or enable devices.  
 🐛 There is no memory locking  or variable checking in YOLOL so you can easily overwrite existing variables, causing unintented behaviour (naming clashes), aka bugs.  
 ⚠️ Using global variables in YOLOL that don't exist, causes the line to be silently ignored.  _ISAN for example takes advantage of this to detect a Quad or Mono setup._  
+⚠️ Initial values do matter for string concatenation! eg. If you let it default as 0 and start adding strings to it, it will remain 0.  This applies to Memory Relay variables as well.
+
 There are 2 ways to create a global variable:
 1. assign it to a TextPanel, Button, Switch or Device instance
 2. add it to a memory chip

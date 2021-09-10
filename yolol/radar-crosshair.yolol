@@ -1,6 +1,5 @@
-:R=:RangeFinderDistance :P=:CHHit :E=:CHMiss n="\n" s=" "
 :CH1=:RATL+:RATT+:RATR :CH2=:RALL+:RAMM+:RARR :CH3=:RABL+:RABB+:RABR
-:____=:CHT+n+n+s+:CH1+n+s+:CH1+n+s+:CH2+n+s+:CH3+n+s+:CH3 GOTO1
+n="\n" s="\n " :____=:CHT+n+s+:CH1+s+:CH1+s+:CH2+s+:CH3+s+:CH3 GOTO1
 
 
 
