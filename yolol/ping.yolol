@@ -1,0 +1,20 @@
+t = :Transponder IF t == 1 THEN GOTO 3 END IF t == 0 THEN GOTO4 END
+:transponderActive = 0  GOTO1
+:transponderActive = 1 GOTO1
+:transponderActive = 1 i = 1
+IF i<49 THEN i++ GOTO5 END
+IF :Transponder!=-1 THEN :Transponder= -1 GOTO1 END GOTO3
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Transponder Script -1 turn it off 0 is a 10 sec ping and 1 i on
