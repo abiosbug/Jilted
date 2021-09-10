@@ -29,6 +29,7 @@ There are 2 ways to create a global variable:
 
 ## Navigation - PURPLE
 
+### Ping
 ### Waypoints
 ### Compass
 
