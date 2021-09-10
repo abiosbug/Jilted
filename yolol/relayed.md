@@ -7,7 +7,7 @@
 | FWD | FCUForward |
 | BCK | FCUBackward |
 | YAW | FCURotationalYaw |
-| ROL | FCURotationalRol |
+| ROL | FCURotationalRoll |
 | RLE | FCURightLeft |
 | UDN | FCUUpDown |
 | GeneratorUnitRate | Generators |
