@@ -1,0 +1,20 @@
+IF :PP>=2 AND NOT:Override THEN:Laser=0 ShipOff=1:Cruise=:H END GOTO1
+GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// So you pulled it after all, hope you aren't flying
+// Dont put any other scripts, this has to run fast
+// SAFETY SCRIPT disable the laser as soon as the pilot leaves
