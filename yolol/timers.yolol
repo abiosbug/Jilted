@@ -1,0 +1,20 @@
+n="\n" a="INF" b=" %" z="---" c=1000 m=60 h=3600 MR=:MaxF MP=:MaxP
+d=e e=f f=g g=:Fuel RD=((g-f)+(f-e)+(e-d))/3 RP=n+(g/MR)*100+b+n
+RT=g/-RD RH=(RT/h)/c*c RM=((RT-RH*h)/m)/c*c RTL=RH+"h "+RM+"m "
+i=l j=l k=l l=:Propellant PD=((l-k)+(k-j)+(j-i))/3 PP=n+(l/MP)*100+b+n
+PT=l/-PD PH=(PT/h)/c*c PM=((PT-PH*h)/m)/c*c PTL=PH+"h "+PM+"m "
+:Timers=n+z+"Rods"+z+n+RTL+RP+z+"Prop"+z+n+PTL+PP RTL=a PTL=a GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Propellant and Fuel consumption calculation
