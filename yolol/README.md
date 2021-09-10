@@ -12,7 +12,7 @@ relayed.yml contains the Memory Relay mapping values.
 If you've ever wondered how the ISAN code was made, look no further, because if you take YOLOL serious, you want to consider the [YODK framework][1].  This allows for less limited coding and will transpile to compact and performant YOLOL, allowing you to focus on functionality instead of limitations.  Have a look at their project to get you started.  I'm still in the process to test all this out myself and will provide more info here as I discover it myself.  I mean, they even have a (limited) testing framework so you can validate your scripts without ever needing to paste it in-game.
 
 ## Memory Relays
-Memory Relays can be used in the same network to rename variables.  This allows for YOLOL-free display label adjustments as well as concise scripted FCU manipulations without having custom keybinds.  You'll need 2 memory chips as well and place them in the relay slots.  Wire both cable connections to the network as well.  Note the arrows indicating which chip will pass on its value to the other chip as the relays work in a single direction.  The fields are mapped in order, so 1st field of the input chip maps to the 1st field on the output chip.
+Memory Relays can be used in the same network to rename variables.  This allows for YOLOL-free display label adjustments as well as concise scripted FCU manipulations without having custom keybinds.  You'll need 2 memory chips as well and place them in the relay slots.  Wire both cable connections to the network as well.  Note the arrows indicating which chip will pass on its value to the other chip as the relays work in a single direction.  The fields are mapped in order, so 1st field of the input chip maps to the 1st field on the output chip.  See the [Memory Mapping table](relayed.md)
 
 Example Propellant calculation: instead of having to sum up and set the total stored propellant to eg `:Propellant`, you can use the Memory Relay to map `:GasNetworkStoredResource` to `:Propellant`.  
 Example FCU manipulation: you want `:roll=100` in a script to roll right and `:FCURotationalRoll` is just too long to fit on your line, you map `:roll` to `:FCURotationalRoll` and be done with it!
@@ -34,27 +34,31 @@ There are 2 ways to create a global variable:
 
 ## Navigation - PURPLE
 
-### Ping
-### Waypoints
-### Compass
+- [Ping](ping.yolol)
+- [Waypoints](waypoints.yolol)
+- [Compass](compass.yolol)
 
 ## Avoidance - GREEN
 
+- [Enable](avoidance-enable.yolol)
+- [Scripts](avoidance.split.yml)
+- [Memory](avoidance.mem.yml)
+
 ## Mining - ORANGE
 
-### Approach
-### Turtle
-### Pulse
-### Generator
+- [Approach](approach.yolol)
+- [Turtle](turtle.yolol)
+- [Pulse](pulse.yolol)
+- [Generator](generator.yolol)
 
 ## Laser - RED
 
-### LaserDance
-### NomNom
-### DrillBit
+- [LaserDance](laserdance.yolol)
+- [LaserDance NomNom](laserdance-nomnom.yolol)
+- [LaserDance DrillBit](laserdance-drillbit.yolol)
 
 ## Safety - BLACK
 
-### Pilot Present
+- [Safety](safety.yolol)
 
 [1]: https://github.com/dbaumgarten/yodk
