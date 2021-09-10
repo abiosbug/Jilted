@@ -4,7 +4,7 @@ If you need speed, you want your code to run on a single line on an individual c
 
 I've grouped the YOLOL sections per logical feature and color coded them.  I try to keep everything together inside the designated racks: both the script checking for a switch or button, as well as the actual script and possible memory chips.
 
-Files names `.split.yolol` are expected to have each line run on a separate chip.
+Files names `.split.yolol` are expected to have each line run on a separate chip for maximum performance.  However you can split them up as you see fit if performance is less critical.
 
 ## Memory Relays
 Memory Relays can be used in the same network to rename variables.  This allows for YOLOL-free display label adjustments as well as concise yolol FCU manipulations without having custom keybinds.  You'll need 2 memory chips as well and place them in the relay slots.  Wire both cable connections to the network as well.  Note the arrows indicating which chip will pass on its value to the other chip as the relays work in a single direction.  The fields are mapped in order, so 1st field of the input chip maps to the 1st field on the output chip.
