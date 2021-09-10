@@ -1,0 +1,20 @@
+IF :AAS AND :Distance<:R THEN :CT=:FWD :FWD=0 BCK=:Distance/10 END
+IF :AAS AND :Distance>=:R AND :CT THEN :FWD=:CT END GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Simple brake script, uses the remaining distance as BCK input
+// Stores the current FWD and stops if center rangefinders trigger
