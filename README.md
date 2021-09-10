@@ -31,7 +31,7 @@ I spent a lot of time clearing my inventory when mining, and it felt like a huge
 #### NomNom
 The NomNom dance was the first one I created. It is just slowly opening up and closing the laser beams, resembling a chewing motion, hence the name NomNom.  I added just a little roll as well, depening on how much opening the laser beams currently have.
 
-#### Drill
+#### DrillBit
 The second Dance makes your ship go roll as fast as possible, whilst slowly opening up the laser beams, slowing down the laser opening movement the greater the angle is.  The idea was to arrive at an asteroid, center the ship, enable the drill and have it carve out the asteroid from the center outwards to the edge.
 
 ### Asteroid Avoidance System and Radar
