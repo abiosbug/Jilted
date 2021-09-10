@@ -1,0 +1,19 @@
+:R=:RangeFinderDistance :P=:CHHit :E=:CHMiss n="\n" s=" "
+:CH1=:RATL+:RATT+:RATR :CH2=:RALL+:RAMM+:RARR :CH3=:RABL+:RABB+:RABR
+:____=:CHT+n+n+s+:CH1+n+s+:CH1+n+s+:CH2+n+s+:CH3+n+s+:CH3 GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
