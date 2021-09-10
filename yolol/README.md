@@ -25,11 +25,11 @@ There are 2 ways to create a global variable:
 1. assign it to a TextPanel, Button, Switch or Device instance
 2. add it to a memory chip
 
-## Displays - BLUE
+### Displays - BLUE
 
-### Info
-### Fuel / Propellant
-### Statusd
+- [Info](info.yolol)
+- [Fuel / Propellant](fuel.yolol)
+### Status
 ### Timers
 ### Radar
 ### Crosshair
