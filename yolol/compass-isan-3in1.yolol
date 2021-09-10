@@ -1,0 +1,20 @@
+a="origin_" b=a+"north" c=a+"south" d=a+"east" a+="west" :t=b
+e=160000 f=8*e g=f*3/13 h=2*e i=h*13/19 j=f*3/19 k=h*13/3 l=1000000
+m=l-:e m*=m n=l-:f n*=n o=l-:g o*=o :t=c
+p=(m+q)/f+r/g-s/j t=q/h-m/i+(r+s)/k u=(r+s-m-q)/e
+q=l-:e q*=q v=l-:f v*=v w=l-:g w*=w :t=d
+x=(n+v)/f+y/g-z/j aa=v/h-n/i+(y+z)/k ab=(y+z-n-v)/e
+r=l-:e r*=r y=l-:f y*=y ac=l-:g ac*=ac :t=a
+ad=(o+w)/f+ac/g-ae/j af=w/h-o/i+(ac+ae)/k ag=(ac+ae-o-w)/e
+s=l-:e s*=s z=l-:f z*=z ae=l-:g ae*=ae :t=b
+:ex=p :ey=t :ez=u :fx=x :fy=aa :fz=ab :gx=ad :gy=af :gz=ag goto3-:kr
+
+
+
+
+
+
+
+
+
+// isan3in1.yolol
