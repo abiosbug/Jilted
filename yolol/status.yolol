@@ -1,0 +1,20 @@
+tm=20 n="\n" s="" ss="" as="" de=:DurabilityErrors wc="Warp: "
+ds="All OK" IF de > 0 THEN ds=de+" ERRORS" END ss=n+"! DANGER !"
+IF :insideSafezone THEN ss=n+"_ SAFE _" :MBC=2 ELSE :MBC=0 END
+st="NO Station" IF :stationsAllowed THEN st="Station OK" END
+as=n+:NAAS+" triggers" s=ss+n+st+n+ds+as+n+wc+:WarpClass:Status=sGOTO1
+//:Fuel=:FuelChamberFuel :Propellant=:GasContainerStoredResource
+GOTO1
+
+
+
+
+
+
+
+
+
+
+
+// todo add proper avoidance counter, not just the number of RF hits
+// Ship Status values
