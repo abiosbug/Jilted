@@ -1,0 +1,20 @@
+a=.7 :kz=1
+b="+0" c="O1" d=0 e=0 f=0 g=0 h=0 i=.5
+j=:ex k=:ey l=:ez m=:fx-j n=:fy-k o=:fz-l p=:gx-j q=:gy-k r=:gz-l
+s=(m*m+n*n+o*o)^i m/=s n/=s o/=s t=(p*p+q*q+r*r)^i p/=t q/=t r/=t
+u=:tx-j v=:ty-k w=:tz-l x=(u*u+v*v+w*w)^.5 u/=x v/=x w/=x y=n*r-q*o
+z=o*p-r*m aa=m*q-p*n ab=m*u+n*v+o*w ac=y*u+z*v+aa*w ad=p*u+q*v+r*w
+g=ac*3/a g=6-g-(3-g)*(g<3)-(-3-g)*(g>-3) h=ad*5/a
+:kz=15-h-(5-h)*(h<5)-(-5-h)*(h>-5) :kx=b+c-ab<0-b-c :ky=g :kl=x
+:hx=m :hy=n :hz=o :ix=y :iy=z :iz=aa :jx=p :jy=q :jz=r
+:ks=((j-d)^2+(k-e)^2+(l-f)^2)^.5/1.6 d=j e=k f=l goto3-:kr
+
+
+
+
+
+
+
+
+
+// delta.yolol
