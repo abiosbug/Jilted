@@ -1,0 +1,20 @@
+sm=10 st=20 ym=100 h=100
+IF :Mi THEN :MiOn=1 GOTO3 ELSE :MiOn=0 GOTO1 END
+IF :MiOn THEN IF :S THEN sm=5 END END
+IF :MiOn THEN :FM=st :YM=sm :YN=-sm :PM=sm :PN=-sm GOTO1 END
+IF :NAV THEN ym=50 END :FM=h :YM=ym :YN=-ym :PM=h :PN=-h GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Turn on the mining equipment and custom turtle mode
