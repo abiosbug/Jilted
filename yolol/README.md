@@ -4,7 +4,9 @@ If you need speed, you want your code to run on a single line on an individual c
 
 I've grouped the YOLOL sections per logical feature and color coded them.  I try to keep everything together inside the designated racks: both the script checking for a switch or button, as well as the actual script and possible memory chips.
 
-Files names `.split.yolol` are expected to have each line run on a separate chip for maximum performance.  However you can split them up as you see fit if performance is less critical.
+Files names `.split.yolol` are expected to have each line run on a separate chip for maximum performance.  However you can split them up as you see fit if performance is less critical.  
+Files named `.mem.yml` are supposed to be put on memory chips.  
+relayed.yml contains the Memory Relay mapping values.
 
 ## Development - YODK
 If you've ever wondered how the ISAN code was made, look no further, because if you take YOLOL serious, you want to consider the [YODK framework][1].  This allows for less limited coding and will transpile to compact and performant YOLOL, allowing you to focus on functionality instead of limitations.  Have a look at their project to get you started.  I'm still in the process to test all this out myself and will provide more info here as I discover it myself.  I mean, they even have a (limited) testing framework so you can validate your scripts without ever needing to paste it in-game.
