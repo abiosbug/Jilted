@@ -1,0 +1,20 @@
+da=:FixV ta1=da+:DA1 ta2=da+:DA2 ta3=da+:DA3
+tr1=da+:DR1 tr2=da+:DR2 tr3=da+:DR3 sa=da+:SA
+IF :Fix AND :TA1!=ta1 THEN :TA1=ta1 :TA2=ta2 :TA3=ta3 END
+IF :Fix AND :TR1!=tr THEN :TR1= tr1 :TR2=tr2 :TR3=tr3 :SA=sa END
+IF :Fix THEN IF NOT :FixV THEN :FixV=.1 ELSE :FixV=0 END END
+IF :Fix AND :TA1==ta1 THEN :Fix= 0 END
+IF :FLOW==0 THEN :FlowIn=1 :FlowOut=1 :FSC=3 END
+IF :FLOW==1 THEN :FlowIn=0 :FlowOut=1 :FSC=2 END
+IF :FLOW==-1 THEN :FlowIn=1 :FlowOut=0 :FSC=4 END GOTO1
+
+
+
+
+
+
+
+
+
+// reset turrent rotation and angle if Fix is pressed
+// uses varying target value to force turret movement
