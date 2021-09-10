@@ -38,7 +38,7 @@ The second Dance makes your ship go roll as fast as possible, whilst slowly open
 Whilst the Jilted has alread a best-in-class avoidance system in place, I reworked the resolution of the rangefinders to have 15 unique zones of detection next to the central distance rangefinder.  The motivation was to have some kind of radar display that would show which zone is triggered when the avoidance kicks in.  I also added a counter that counts every avoidance the script has done.  When AAS is off, you'll have a basic cross on the radar.  With AAS enabled, all 15 zones are reporting back to the display in 9 groups.
 
 ### Compass
-The amazing people of the Collaborative Yolol Learning Open Network have created a [compass module][1], see for yourself what this thing can do!
+The amazing people of the Collaborative Yolol Learning Open Network have created a [compass module][1], see for yourself what this OP thing can do!
 
 ### Status screen
 A text panel showing you if you're in SafeZone, whether you can place a station, the amount of durability errors if any and your current warp class
@@ -47,24 +47,24 @@ Another text panel with your estimated Time Left values for Propellant and Fuel
 ### 30 Waypoint System
 Any navigation feature works better when you can select and store waypoints without having to use the U tool, so I added the 30 waypoint system from [Archeageo][2]
 
-### Autopilot
-Select a stored waypoint, hit the button and watch the ship align itself and take off on its own.  Will constantly check it's heading along the way and correct when needed.  Still in it's early development as the alignment feature is currently very slow.  Using the compass first and only then hitting the button works best for now.
+### Autopilot and Navigation
+Select a stored waypoint, hit the button and watch the ship align itself and take off on its own.  Will constantly check it's heading along the way and correct when needed.  Still in it's early development as the alignment feature is currently very slow.  Displays Deltas and opening/closing angles as well.  Using the compass first to align yourself manually and only then hitting the button works best for now.
 
 ### Pilot Presence Detection
 When using automated lasers, you don't want to risk being caught by one so a rangefinder pointed at the pilot works wonders.  Leave the seat and the lasers turn off, that's all it does.  Ofcourse you can add functionality as you see fit.  Includes an override button so you can still risk it if needed, eg. when testing your new Laser Dance script.
 
 ### QOL
-Flow In Both Out switch
-Automatic laser (de)activation based on distance
-5 additional rangefinders for distance calculation, so more margin of error when aiming
+- Flow In Both Out switch
+- Automatic laser (de)activation based on distance
+- 5 additional rangefinders for distance calculation, so more margin of error when aiming
 
 ## Cosmetics
-Colored hardpoints for the Rangefinder array as well as for the resource bridges and laser equipment.
-Headlight and ship lights
-Reorganized controls to accomodate for the moving chair and extra panels
-More batteries so you can dance longer
-Rework Fuel and Propellant calculation to be YOLOL free with Memory Relays
-Added Fuel racks instead of bolted rods
+- Colored hardpoints for the Rangefinder array as well as for the resource bridges and laser equipment.
+- Headlight and ship lights
+- Reorganized controls to accomodate for the moving chair and extra panels
+- More batteries so you can dance longer and for perfect balance
+- Rework Fuel and Propellant calculation to be YOLOL free with Memory Relays
+- Added Fuel racks instead of bolted rods
 
 [1]: https://gitlab.com/Firestar99/yolol/-/tree/master/src/compass
 [2]: https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
