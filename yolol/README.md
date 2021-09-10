@@ -28,11 +28,9 @@ There are 2 ways to create a global variable:
 ### Displays - BLUE
 
 - [Info](info.yolol)
-- [Fuel / Propellant](fuel.yolol)
-### Status
-### Timers
-### Radar
-### Crosshair
+- [Status](status.yolol)
+- [Radar](radar.yolol)
+- [Crosshair](crosshair.yolol)
 
 ## Navigation - PURPLE
 
