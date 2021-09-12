@@ -39,6 +39,7 @@ There are 2 ways to create a global variable:
 - [Ping](ping.yolol)
 - [Waypoints](waypoints.yolol)
 - [Compass](compass.yolol)
+- [Nav](nav.yolol)
 
 ## Avoidance - GREEN
 

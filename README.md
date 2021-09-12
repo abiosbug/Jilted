@@ -1,5 +1,8 @@
 # Jilted
 _Collection of adjustments done to the Jilted_
+⚠️ This is still very much work in progress, dont expect to be able to just copy paste yolol and have what's listed below ⚠️  
+_A lot of information is still missing, screenshots, part lists, build info, field names, etc  
+I started this repo for debugging YOLOL as it became unwieldly in-game: no search, no syntax checks, nothing to debug complicated setups.  Having all yolol code, memory variables and relay variables in one folder, working with vscode and the yolol extension has already helped a lot!_
 
 ## Purpose & Background
 This repo serves as a blueprint to keep track of the things I adjusted during my work on the Jilted.
@@ -17,7 +20,7 @@ Enabling the Mining mode activates the ships Turtle mode by default, ideal for d
 I was bothered by the way the cockpit gets in your view, especially after finishing up on an asteroid I found it hard to search for the next one.  The slider is bolted to the frame and the pilot chair is bolted to the moving arm.  Since the chair requires power, I used a duct slider to allow it to remain powered, even whilst sliding.
 
 ### PID controlled Approach
-Approaching an object based on a Rangefinder measurement requires a constant feedback loop, as your ship behaves different to FCU inputs depending on its load.  A PID loop is the perfect match to tackle this problem, so you can have a self-correcting system that works within the given variation boundaries.  Added the 5 other center rangefinders to the Distance calculation so you have it easier keeping the asteroid targetted.
+Approaching an object based on a Rangefinder measurement requires a constant feedback loop, as your ship behaves different to FCU inputs depending on its load.  A PID loop is the perfect match to tackle this problem, so you can have a self-correcting system that works within the given variation boundaries.  Added 5 other central rangefinders to the Distance calculation so you have it easier keeping the asteroid locked on.
 
 ### Hover Mode
 The Jilted comes equipped with a warp core to allow for moon mining trips, so I added 4 rangefinders on the bottom of the ship and a slider to adjust the desired hover height.  Uses the same PID controlled system as the Approach feature
@@ -48,7 +51,7 @@ Another text panel with your estimated Time Left values for Propellant and Fuel
 Any navigation feature works better when you can select and store waypoints without having to use the U tool, so I added the 30 waypoint system from [Archeageo][2]
 
 ### Autopilot and Navigation
-Select a stored waypoint, hit the button and watch the ship align itself and take off on its own.  Will constantly check it's heading along the way and correct when needed.  Still in it's early development as the alignment feature is currently very slow.  Displays Deltas and opening/closing angles as well.  Using the compass first to align yourself manually and only then hitting the button works best for now.
+Select a stored waypoint, hit the button and watch the ship align itself and take off on its own.  Will constantly check it's heading along the way and correct when needed.  Still in it's early development as the alignment feature is currently very slow.  Displays Deltas and opening/closing angles as well.  Using the compass first to align yourself manually and only then hitting the button works best for now.  Uses the excellent [NAVCAS setup][3] for the navigation part (NAV)
 
 ### Pilot Presence Detection
 When using automated lasers, you don't want to risk being caught by one so a rangefinder pointed at the pilot works wonders.  Leave the seat and the lasers turn off, that's all it does.  Ofcourse you can add functionality as you see fit.  Includes an override button so you can still risk it if needed, eg. when testing your new Laser Dance script.
@@ -68,3 +71,4 @@ When using automated lasers, you don't want to risk being caught by one so a ran
 
 [1]: https://gitlab.com/Firestar99/yolol/-/tree/master/src/compass
 [2]: https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
+[3]: https://github.com/fixerid/sb-projects
