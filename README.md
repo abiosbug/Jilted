@@ -1,23 +1,23 @@
 # Jilted
-_Collection of adjustments done to the Jilted_
+_Collection of adjustments done to the Jilted_  
 ⚠️ This is still very much work in progress, dont expect to be able to just copy paste yolol and have what's listed below ⚠️  
 _A lot of information is still missing, screenshots, part lists, build info, field names, etc  
 I started this repo for debugging YOLOL as it became unwieldly in-game: no search, no syntax checks, nothing to debug complicated setups.  Having all yolol code, memory variables and relay variables in one folder, working with vscode and the yolol extension has already helped a lot!_
 
 ## Purpose & Background
-This repo serves as a blueprint to keep track of the things I adjusted during my work on the Jilted.
-This ship, designed by Sun-cy, under the Singularity company, inspired me to add all the features I expect from a premium mining ship.
+This repo serves as a blueprint to keep track of the things I adjusted during my work on the Jilted.  
+This ship, designed by Sun-cy, under the Singularity company, inspired me to add all the features I expect from a luxurious mining ship.
 
 ## Functional Mods
 
 ### T2/T3 Drive Train
-The Jilted comes default with a T2 Fuel chamber and generator setup, with enhancers.  All triangle thrusters, used as manoever thrusters, are T2 as well.  The box thrusters are T1 as the ship already goes 150 m/s empty.  That didn't stop me from changing them to T2 as well and adding T3 nozzles to the triangle thrusters for that little extra manoevring speed.
+The Jilted comes default with a T2 Fuel chamber and generator setup, with enhancers.  All triangle thrusters, used as manoever thrusters, are T2 as well.  The box thrusters are T1 as the ship already goes 150 m/s empty.  That didn't stop me from changing them to T2 as well, I even added T3 nozzles for that extra punch.
 
 ### Ninja Turtle mode
-Enabling the Mining mode activates the ships Turtle mode by default, ideal for dense asteroid fields or stations.  When the lasers are activte, your movements slow down even more so you can do some Ninja Turtle stuff.
+Enabling the Mining mode activates the ships Turtle mode by default, ideal for dense asteroid fields or stations.  When the lasers are activte, your movements slow down even more so you can do even more precise movements.
 
 ### Pilot chair
-I was bothered by the way the cockpit gets in your view, especially after finishing up on an asteroid I found it hard to search for the next one.  The slider is bolted to the frame and the pilot chair is bolted to the moving arm.  Since the chair requires power, I used a duct slider to allow it to remain powered, even whilst sliding.
+I was bothered by the way the cockpit gets in your view, especially after finishing up on an asteroid I found it hard to find the next one.  So I added a slider, bolted to the frame, so the pilot chair is bolted to the moving arm.  Since the chair requires power, I used a duct slider to allow it to remain powered, even whilst sliding.
 
 ### PID controlled Approach
 Approaching an object based on a Rangefinder measurement requires a constant feedback loop, as your ship behaves different to FCU inputs depending on its load.  A PID loop is the perfect match to tackle this problem, so you can have a self-correcting system that works within the given variation boundaries.  Added 5 other central rangefinders to the Distance calculation so you have it easier keeping the asteroid locked on.
