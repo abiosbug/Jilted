@@ -62,12 +62,14 @@ When using automated lasers, you don't want to risk being caught by one so a ran
 - 5 additional rangefinders for distance calculation, so more margin of error when aiming
 
 ## Cosmetics
-- Colored hardpoints for the Rangefinder array as well as for the resource bridges and laser equipment.
+- Colored hardpoints for the Rangefinders array as well as for the resource bridges and laser equipment.
 - Headlight and ship lights
 - Reorganized controls to accomodate for the moving chair and extra panels
 - More batteries so you can dance longer and for perfect balance
-- Rework Fuel and Propellant calculation to be YOLOL free with Memory Relays
+- YOLOL free Fuel and Propellant calculation with Memory Relays
 - Added Fuel racks instead of bolted rods
+- Adjustable YOLOL rack labels & color coded chips
+- Plenty of YOLOL sockets to tinker with whilst flying
 
 [1]: https://gitlab.com/Firestar99/yolol/-/tree/master/src/compass
 [2]: https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
