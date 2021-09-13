@@ -1,4 +1,4 @@
-roll=50 i=0 IF :S AND :LD AND :Dance==1 THEN GOTO2 END GOTO1
+roll=50 i=0 IF (:LS)*(:LD)*(:Dance==1) THEN GOTO2 END GOTO1
 hs=(:Hotspot/100)*:MHS ta1=:DA1+hs ta2=:DA2+hs ta3=:DA3+hs
 :TA1=ta1 :TA2=ta2 :TA3=ta3 //croll=roll-roll*(:Hotspot/200) :ROL=croll
 IF NOT :LD THEN GOTO1 END

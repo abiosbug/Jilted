@@ -1,4 +1,4 @@
-IF :PP>=2 AND NOT:Override THEN:Laser=0 ShipOff=1:Cruise=:H END GOTO1
+IF:Override*(:PP>=2) THEN:Laser=0 :NoPilot=1 ELSE:NoPilot=0 END GOTO1
 GOTO1
 
 

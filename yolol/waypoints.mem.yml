@@ -1,43 +1,36 @@
-x: 0
-y: 0
-z: 0
 wx: 0
 wy: 0
 wz: 0
-i: 0
-j: 0
-k: 0
-spd: 0
 wpu: 0
 wpcn: 0
 wpc: "Center \nX:0 \nY:0 \nZ:0"
-w1: 0
-w2: 0
-w3: 0
-w4: 0
-w5: 0
-w6: 0
-w7: 0
-w8: 0
-w9: 0
-w10: 0
-w11: 0
-w12: 0
-w13: 0
-w14: 0
-w15: 0
-w16: 0
-w17: 0
-w18: 0
-w19: 0
-w20: 0
-w21: 0
-w22: 0
-w23: 0
-w24: 0
-w25: 0
-w26: 0
-w27: 0
-w28: 0
-w29: 0
-w30: 0
+w1: "Origin 1\nX:-1514 \nY:-58557 \nZ:14605"
+w2: "Origin 2\nX:-12356 \nY:-53113 \nZ:9482"
+w3: "Origin 3\nX:-21163 \nY:-48710 \nZ:9735"
+w4: "Origin 4\nX:-30412 \nY:-39176 \nZ:4620"
+w5: "Origin 5\nX:-35894 \nY:-28937 \nZ:-569"
+w6: "Origin 6\nX:-40449 \nY:-19201 \nZ:-5273"
+w7: "Origin 7\nX:-45639 \nY:-9224 \nZ:-5593"
+w8: "Origin 8\nX:-45676 \nY:511 \nZ:-5543"
+w9: "Origin 9\nX:-45810 \nY:10676 \nZ:-5501"
+w10: "Origin 10\nX:-41736 \nY:22001 \nZ:-5152"
+w11: "Origin 11\nX:-37450 \nY:30882 \nZ:-743"
+w12: "Origin 12\nX:-32408 \nY:40743 \nZ:4281"
+w13: "Origin 13\nX:-22509 \nY:50949 \nZ:9390"
+w14: "Origin 14\nX:-12627 \nY:56072 \nZ:9548"
+w15: "Origin 15\nX:-2299 \nY:61232 \nZ:14458"
+w16: "Origin 16\nX:7554 \nY:61302 \nZ:14552"
+w17: "Origin 17\nX:17836 \nY:56855 \nZ:10092"
+w18: "Origin 18\nX:28872 \nY:51332 \nZ:9665"
+w19: "Origin 19\nX:38334 \nY:42004 \nZ:4963"
+w20: "Origin 20\nX:43363 \nY:32331 \nZ:81"
+w21: "Origin 21\nX:48612 \nY:22216 \nZ:-5050"
+w22: "Origin 22\nX:53755 \nY:11921 \nZ:-5450"
+w23: "Origin 23\nX:53982 \nY:1680 \nZ:-5390"
+w24: "Origin 24\nX:53948 \nY:-8049 \nZ:-5410"
+w25: "Origin 25\nX:48380 \nY:-18037 \nZ:-5330"
+w26: "Origin 26\nX:44005 \nY:-28331 \nZ:-446"
+w27: "Origin 27\nX:38773 \nY:-38224 \nZ:4672"
+w28: "Origin 28\nX:28909 \nY:-48311 \nZ:9594"
+w29: "Origin 29\nX:18452 \nY:-53450 \nZ:9642"
+w30: "Origin 30\nX:8356 \nY:-58735 \nZ:15266"

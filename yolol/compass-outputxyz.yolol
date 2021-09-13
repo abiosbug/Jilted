@@ -9,12 +9,10 @@ c=:: n=1 goto8+5*(c=="reset")+7*(c=="")
 y=c y-=c-- z=5*(y>4)+2*(d>(d-y)) z+=y>z z+=y>z w+=z*10^x++ goto9+y<0
 aa=1 ify=="-"thenaa=-1 c--end
 ab=ac ac=ad ad=w*aa w=0 x=-1 goto9+3*(c<0)
-:tx=ad :ty=ac :tz=ab goto5
+:wx=ad :wy=ac :wz=ab goto5
 :kr=2 ae=24 d="\nreseting"
 d+="." ::=d goto14-14*(ae--<0)
 d=i+"Streamer mode" ::=d
 c=:: ::=d goto16-11*(c!=d)+8*(c=="reset")
-
-
 
 // outputxyz.yolol

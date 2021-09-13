@@ -1,6 +1,6 @@
-IF :Mi == 1 THEN :Scan = 1 T = "" n = "\n" GOTO2 END GOTO1
-:Ind = 0 T = n+:Mat+n+:Vol/1728 :Ind = 1 T += n+:Mat+n+:Vol/1728 
-IF :Data > 0 THEN:ScanRes = T END :Reset = 1 GOTO1
+n="\n" IF :Mi THEN :Scan=1 T="" GOTO2 END :SCR="\n\n off" GOTO1
+:Ind=0 T=n+:Mat+n+:Vol/1728 :Ind=1 T+=n+:Mat+n+:Vol/1728 
+IF :Data*(T!=" ") THEN :SCR=T ELSE :SCR=:SCTR END :Reset=1 GOTO1
 
 
 

@@ -1,4 +1,5 @@
-laserinfo: "Use the  >> buttons to change dance    >>"
+laserinfo: "\nUse the  >> buttons to change dance    >>"
+laserdance: ""
 dance: 1
 dance1: "NomNom"
 dance2: "DrillBit"

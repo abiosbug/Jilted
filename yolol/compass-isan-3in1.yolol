@@ -1,17 +1,13 @@
-a="origin_" b=a+"north" c=a+"south" d=a+"east" a+="west" :t=b
+a="origin_" b=a+"north" c=a+"south" d=a+"east" a+="west" :kt=b
 e=160000 f=8*e g=f*3/13 h=2*e i=h*13/19 j=f*3/19 k=h*13/3 l=1000000
-m=l-:e m*=m n=l-:f n*=n o=l-:g o*=o :t=c
+m=l-:ke m*=m n=l-:kf n*=n o=l-:kg o*=o :kt=c
 p=(m+q)/f+r/g-s/j t=q/h-m/i+(r+s)/k u=(r+s-m-q)/e
-q=l-:e q*=q v=l-:f v*=v w=l-:g w*=w :t=d
+q=l-:ke q*=q v=l-:kf v*=v w=l-:kg w*=w :kt=d
 x=(n+v)/f+y/g-z/j aa=v/h-n/i+(y+z)/k ab=(y+z-n-v)/e
-r=l-:e r*=r y=l-:f y*=y ac=l-:g ac*=ac :t=a
+r=l-:ke r*=r y=l-:kf y*=y ac=l-:kg ac*=ac :kt=a
 ad=(o+w)/f+ac/g-ae/j af=w/h-o/i+(ac+ae)/k ag=(ac+ae-o-w)/e
-s=l-:e s*=s z=l-:f z*=z ae=l-:g ae*=ae :t=b
-:ex=p :ey=t :ez=u :fx=x :fy=aa :fz=ab :gx=ad :gy=af :gz=ag goto3-:kr
-
-
-
-
+s=l-:ke s*=s z=l-:kf z*=z ae=l-:kg ae*=ae :kt=b
+:fx=x :fy=aa :fz=ab :gx=ad :gy=af :gz=ag goto3-:kr
 
 
 

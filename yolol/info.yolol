@@ -1,16 +1,19 @@
-// Jilted T2 Enhanced
-
-// Memory Relays to the rescue
-// This ship uses YOLOL to fly to a set coordinate but the default FCU
-// names are remapped via the Memory Relays, as well as panel titles
-
-// checkout the YOLOL Walhala at https://github.com/CylonSB/Scripts
+// Jilted Deluxe - github.com/abiosbug/Jilted
 
 // This is the awesome Jilted from Suncy, modified to be used as a
 // versatile miner, built for far out exploration and autopilot trips.
 // Mods include an approach and ninja turtle mode as well as automatic
-// lasers with yolol movements so you can keep mining whilst
-// clearing up your inventory. Comes with all benches and plenty of
+// lasers with scripted movements so you can keep mining whilst
+// clearing up that inventory. Comes with all benches and plenty of
 // advanced YOLOL & memory chips for you to tinker with whilst
-// travelling. Also features a pilot detection system so you can keep
-// it safe. For any questions, contact Biosbug
+// travelling.  Full feature list can be found on the github.
+
+// Memory Relays to the rescue
+// This ship uses YOLOL to fly to a set coordinate but the default FCU
+// names are remapped via the Memory Relays, as well as panel titles
+// checkout the YOLOL Walhala at https://github.com/CylonSB/Scripts
+
+// Short if statements reference:
+// AND -> *, OR -> +, NOT -> 0^
+// IF a AND NOT b -> IF a*0^b
+// IF c OR NOT d -> IF c+0^d

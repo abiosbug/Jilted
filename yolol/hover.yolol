@@ -1,0 +1,17 @@
+:UDC=:HM*:RFHD*(:RFHD<:HDM) IF :UDC THEN GOTO2 ELSE :UDC=:H END GOTO1
+o=:HD-:RFHD :db="o:"+o+" d:"+:RFHD :UDC=0 :UDN=o GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+// uses difference from target distance as input for up/down
+// sets the cruise of up/down handle if distance < max
+// Hover Mode script, tries to keep the ship at given distance

@@ -37,9 +37,39 @@ There are 2 ways to create a global variable:
 ## Navigation - PURPLE
 
 - [Ping](ping.yolol)
-- [Waypoints](waypoints.yolol)
-- [Compass](compass.yolol)
-- [Nav](nav.yolol)
+- Waypoints:
+  - [Archeageo repo][3]
+  - [Waypoints](waypoints.yolol)
+- Compass
+  - The amazing Compass bundle from FireStar [compass.yolol] using his first released version v1.0  
+    Requires 3 rangefinders placed fromt back right.  Rotated the display 90 deg clockwise to counteract the bottom placement.  
+    Uses an insanely efficient ISAN (10 lines!) for all 3 receivers at once :mindblown:  
+    Comes with additional rotational matrix export via vars `:ix :iy :iz :jx :jy :jz :kx :ky :kz`  
+    Allows for efficient manual orientation before starting the navigation
+- Navigation:
+  - ISAN Navigator bundle  
+    Comes with latest ISAN and needs only 2 yolol chips to run ISAN and a waypoint addon for 16 waypoints. Needs adjusting `x1` to `:x1` to store the waypoints in memory, thus requires 4x16 = 64 variables in memory chips - this storage can definitely be optimized!  
+  - NAVCAS bundle, only using the NAV part [nav-only.yolol] - needs 3 receivers placed front back below  
+    Tries to pitch and yaw the ship towards the target, but in an inefficient way to work around the game limitations (in short, the direction readings go crazy as soon as you start moving).  After your ship has aligned itself within 30 degrees, it will take off and keep correcting itself whilst in flight.  Reads the
+    Needs adjusting the ISAN front back bottom scripts to not interfere with other recievers. Each of those custom ISAN chips tries to set `:bt :ct dt` as well and we can't have 1 receiver being used by 4 different scripts at the same time.  Also, the naming clashes with the compass naming so needs renaming `:a` to `:f` and `:at` to `:ft`, same for `e` and `g`  
+    Trying the following translation matrix:  
+    |        | NAVCAS | Compass | Matrix |
+    | :----  | ------ | ------- | ------ |
+    | FRONT  | a & at | kf & kt |        |
+    | F X    | xa     | fx      | jx     |
+    | F Y    | ya     | fy      | jy     |
+    | F Z    | za     | fz      | jz     |
+    | BACK   | j & jt | ke & kt |        |
+    | B X    | xj     | ex      | ix     |
+    | B Y    | yj     | ey      | iy     |
+    | B Z    | zj     | ez      | iz     |
+    | DOWN   | a & at | kf & kt |        |
+    | F X    | xk     | gx      | kx     |
+    | F Y    | yk     | gy      | ky     |
+    | F Z    | zk     | gz      | kz     |
+
+
+
 
 ## Avoidance - GREEN
 
@@ -65,3 +95,6 @@ There are 2 ways to create a global variable:
 - [Safety](safety.yolol)
 
 [1]: https://github.com/dbaumgarten/yodk
+[2]: https://gitlab.com/Firestar99/yolol/-/tree/master/src/compass
+[3]: https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
+[4]: https://github.com/fixerid/sb-projects
