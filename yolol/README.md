@@ -6,7 +6,43 @@ I've grouped the YOLOL sections per logical feature and color coded them.  I try
 
 Files names `.split.yolol` are expected to have each line run on a separate chip for maximum performance.  However you can split them up as you see fit if performance is less critical.  
 Files named `.mem.yml` are supposed to be put on memory chips.  
-relayed.yml contains the Memory Relay mapping values.
+`relayed.yml` contains the Memory Relay mapping values.
+
+## Overview
+
+\* = Advanced YOLOL chip  
++n = Memory chip
+
+| feature    | # chips    | category   |
+| -------    | ---------- | ---------- |
+| approach   | 1*         | navigation |
+| avoidance  | 18+1       | navigation |
+| compass    | 4*+3       | navigation |
+| fix        | 1+1        | ship       |
+| boot       | 1          | ship       |
+| flow       | 1          | ship       |
+| generators | 1          | mining     |
+| hover      | 1*         | ship       |
+| info       | 4          | ship       |
+| ISAN       | 1*         | info       |
+| laserdance | 4*+1       | laser      |
+| autopilot  | 1*         | navigation |
+| navlights  | 1          | ship       |
+| scanner    | 1*         | mining     |
+| ping       | 1          | status     |
+| radar      | 24+3       | status     |
+| ship       | 2+1        | ship       |
+| turtle     | 1          | navigation |
+| consumption| 1          | status     |
+| status     | 1+1        | status     |
+| timers     | 1*         | status     |
+| turtle     | 1          | mining     |
+| safety     | 1*         | safety     |
+| waypoints  | 4*+3       | navigation |
+| relays     | 0+6        | ship       |
+|            |            |            |
+| totals     | 19* 58 +20 |            |
+
 
 ## Development - YODK
 If you've ever wondered how the ISAN code was made, look no further, because if you take YOLOL serious, you want to consider the [YODK framework][1].  This allows for less limited coding and will transpile to compact and performant YOLOL, allowing you to focus on functionality instead of limitations.  Have a look at their project to get you started.  I'm still in the process to test all this out myself and will provide more info here as I discover it myself.  I mean, they even have a (limited) testing framework so you can validate your scripts without ever needing to paste it in-game.
@@ -27,6 +63,12 @@ There are 2 ways to create a global variable:
 1. assign it to a TextPanel, Button, Switch or Device instance
 2. add it to a memory chip
 
+### Ship
+
+- [Ship](ship.yolol) General ship logic
+  roup front rangefinders - automatic laser activation
+  - [ship-switches.yolol] Less critical switches 
+
 ### Displays - BLUE
 
 - [Info](info.yolol)
@@ -40,19 +82,19 @@ There are 2 ways to create a global variable:
 - Waypoints:
   - [Archeageo repo][3]
   - [Waypoints](waypoints.yolol)
+    Dropped the included ISAN as the ISAN Navigator bundle already calculates the needed values
 - Compass
   - The amazing Compass bundle from FireStar [compass.yolol] using his first released version v1.0  
-    Requires 3 rangefinders placed fromt back right.  Rotated the display 90 deg clockwise to counteract the bottom placement.  
+    Requires 3 rangefinders placed front back right.  Rotated the display 90 deg clockwise to counteract the bottom placement.  
     Uses an insanely efficient ISAN (10 lines!) for all 3 receivers at once :mindblown:  
     Comes with additional rotational matrix export via vars `:ix :iy :iz :jx :jy :jz :kx :ky :kz`  
-    Allows for efficient manual orientation before starting the navigation
+    Allows for efficient manual orientation before starting the autopilot
 - Navigation:
-  - ISAN Navigator bundle  
-    Comes with latest ISAN and needs only 2 yolol chips to run ISAN and a waypoint addon for 16 waypoints. Needs adjusting `x1` to `:x1` to store the waypoints in memory, thus requires 4x16 = 64 variables in memory chips - this storage can definitely be optimized!  
-  - NAVCAS bundle, only using the NAV part [nav-only.yolol] - needs 3 receivers placed front back below  
-    Tries to pitch and yaw the ship towards the target, but in an inefficient way to work around the game limitations (in short, the direction readings go crazy as soon as you start moving).  After your ship has aligned itself within 30 degrees, it will take off and keep correcting itself whilst in flight.  Reads the
-    Needs adjusting the ISAN front back bottom scripts to not interfere with other recievers. Each of those custom ISAN chips tries to set `:bt :ct dt` as well and we can't have 1 receiver being used by 4 different scripts at the same time.  Also, the naming clashes with the compass naming so needs renaming `:a` to `:f` and `:at` to `:ft`, same for `e` and `g`  
-    Trying the following translation matrix:  
+  - ISAN Navigator bundle [ISAN-navigator_bundle.yolol]
+    Comes with latest ISAN and needs only 2 yolol chips to run ISAN and a waypoint addon for 16 waypoints. Not using the waypoint addon.  
+  - NAVCAS bundle, only using the NAV part [nav-only.yolol]
+    Tries to pitch and yaw the ship towards the target, but in an inefficient way to work around the game limitations (in short, the direction readings go crazy as soon as you start moving).  After your ship has aligned itself within 30 degrees, it will take off and keep correcting itself whilst in flight and stop when within 1km of your target.   
+    Applied the following translation matrix and dropped the 3 custom ISAN scripts:  
     |        | NAVCAS | Compass | Matrix |
     | :----  | ------ | ------- | ------ |
     | FRONT  | a & at | kf & kt |        |
@@ -69,8 +111,6 @@ There are 2 ways to create a global variable:
     | F Z    | zk     | gz      | kz     |
 
 
-
-
 ## Avoidance - GREEN
 
 - [Enable](avoidance-enable.yolol)
@@ -82,6 +122,8 @@ There are 2 ways to create a global variable:
 - [Approach](approach.yolol)
 - [Turtle](turtle.yolol)
 - [Pulse](pulse.yolol)
+- [Scanner](scanner.yolol)
+  Based off the [excellent scanner script][5] from DerPfandadler, adjusted the variable names to be prefixed 
 - [Generator](generator.yolol)
 
 ## Laser - RED
@@ -98,3 +140,4 @@ There are 2 ways to create a global variable:
 [2]: https://gitlab.com/Firestar99/yolol/-/tree/master/src/compass
 [3]: https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
 [4]: https://github.com/fixerid/sb-projects
+[5]: https://github.com/DerPfandadler/Pfandadler-YOLOL

@@ -1,11 +1,5 @@
-d=:DS IF:RFC*(:RFC<d) THEN d=:RFC END IF:MS THEN :Mi=1 ELSE :Mi=0 END
-IF:AS THEN :Approach=1 ELSE :Approach=0 END
-IF:LS*(d<21+:Override) THEN :Laser=1 ELSE :Laser=0 END
-IF 0^:FLOW THEN :FlowIn=1 :FlowOut=1 :FSC=3 END
-IF :FLOW>0 THEN :FlowIn=0 :FlowOut=1 :FSC=2 END
-IF :FLOW<0 THEN :FlowIn=1 :FlowOut=0 :FSC=4 END GOTO1
-
-
+d=:DS IF:RFC*(:RFC<d) THEN d=:RFC END
+IF :LS*(d<21+:Override) THEN :Laser=1 ELSE :Laser=0 END GOTO1
 
 
 

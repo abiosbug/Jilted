@@ -10,6 +10,7 @@ These mappings serve to have nice panel labels as well as concise names in YOLOL
 | GasContainerStoredResource    | MaxP               | 0       |
 | GeneratorUnitRate             | Generators         | 0       |
 | RadiationRate                 | Radiators          | 0       |
+| StoredBatteryPower            | Battery            | 0       |
 | RangeFinderDistance           | RD                 | 995     |
 | SCR                           | Scanned            | ""      |
 | stationsAllowed               | STOK               | 0       |

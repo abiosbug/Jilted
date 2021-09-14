@@ -23,5 +23,3 @@ IF :RFBB*(:RFBB<:RD) THEN :RABB=:PX ELSE :RABB=:PO END GOTO1
 IF :RFBLC<:RD+:RFBL<:RD THEN:RABL=:PX+:PX ELSE:RABL=:PO+:PO END GOTO1
 IF :RFBT*(:RFBT<:RD)*0^:RFBB THEN :RABB=:PX END GOTO1
 
-
-|<------------------------------------------------------- 70 chars ->|

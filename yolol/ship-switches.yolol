@@ -1,0 +1,11 @@
+IF :AS THEN :Approach=1 ELSE :Approach=0 END
+IF :AAS THEN :RFC=1 END IF:MS THEN :Mi=1 ELSE :Mi=0 END
+IF :ShipOff THEN :Mi=0 END GOTO1
+
+
+
+
+
+
+
+// General ship switch script, runs non critical buttons and switches

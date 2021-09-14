@@ -1,4 +1,4 @@
-IF:Override*(:PP>=2) THEN:Laser=0 :NoPilot=1 ELSE:NoPilot=0 END GOTO1
+IF 0^:OVR*(:PP>=2) THEN :Laser=0 :NoPilot=1 ELSE :NoPilot=0 END GOTO1
 GOTO1
 
 
