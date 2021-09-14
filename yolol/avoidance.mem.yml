@@ -1,3 +1,2 @@
-ct: 0
-naas: 0
-taas: 0
+NAAS: 0 // number of avoidances
+TAAS: 0 // number of rangefinder triggers

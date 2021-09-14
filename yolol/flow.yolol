@@ -1,0 +1,12 @@
+IF 0^:FLOW THEN :FlowIn=1 :FlowOut=1 :FSC=3 END
+IF :FLOW>0 THEN :FlowIn=0 :FlowOut=1 :FSC=2 END
+IF :FLOW<0 THEN :FlowIn=1 :FlowOut=0 :FSC=4 END GOTO1
+
+
+
+
+
+
+
+
+// Flow switch handling

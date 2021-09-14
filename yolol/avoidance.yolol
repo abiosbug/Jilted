@@ -1,0 +1,20 @@
+IF t!=:TAAS THEN a=1 ELSE a=0 END
+t=:TAAS
+
+IF t==:TAAS*a THEN :NAAS++ a=0 END t=:TAAS
+GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Checks the number of rangefinder triggers and only adds one to
+// NAAS if no rangefinder triggers anymore

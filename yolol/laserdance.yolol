@@ -1,5 +1,3 @@
 d=:Dance td=2 n="\n" s=" " IF :ShipOff THEN :Mi=0 END
-IF :DaN==1 THEN :DaN=0 d++ IF d>td THEN d=1 END :Dance=d END
-IF :DaP==1 THEN :DaP=0 d-- IF d<1 THEN d=td END :Dance=d END
 cd=:Dance2 IF d==1 THEN cd=:Dance1 END
 :LaserDance=cd+n+"HS: "+:Hotspot+n+s+:LaserInfo GOTO1

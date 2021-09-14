@@ -1,4 +1,4 @@
-X=:Battery/100 GOTO :Mi + 2
+X=:StoredBatteryPower/100 GOTO :Mi + 2
 :GeneratorUnitRateLimit=100-.01*X*X GOTO1
 gurl=100-X/2 :GeneratorUnitRateLimit=gurl GOTO1
 
