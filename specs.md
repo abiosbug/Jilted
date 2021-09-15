@@ -12,15 +12,15 @@ RIGHT
 |TBB LRT TBB DCT MMB|  <- avoidance
 |RD  RD  RD  RD |WP |
 |   |   |   |   |WP |
-|SH |TF |ST |   |WP |
-| = | M F C |GTA|||||
+|SH |TF |ST |AP |WP |
+| = | M F C |GT |||||
                      
 
 LEFT                     
 |RA  RA  RA |B-. TCB|  <- avoidance
-|RA  RA  RM |   |LD |
-| I |   |   |   |LD |
-|CM |CM |CM |HP |LD |
+|IS |RA  RA  RM |LD |
+|   |   |   |   |LD |
+|CM |CMI|CM |HP |LD |
 |||||FIX|FN |AS | = | BS
 
 
@@ -28,21 +28,21 @@ LEFT
 
 * LD = LaserDance
 * FIX = FIXes for possible turret/turntable bugs
-- A = Isan Autopilot
-- HP = Hover Ping
-- I = Info
+* HP = Hover Ping
+* IS = Info Singularity
 * FN = Flow Navlights
-- GTA = Generators Turtle Autopilot
+* GT = Generators Turtle
+* AP = AutoPilot
 * AS = Approach Scanner
-- BS = Boot Securiaty
+* BS = Boot Safety
 * RA = RAdar
 * RD = Radar Distance
 * RM = Radar Memory
-- CM = CoMpass
+* CM(I) = CoMpass + ISAN
 * WP = WayPoints
-- ST = Status & Timers
-- SH = SHip scripts
-- TF = ship Transponder & Fcu 
-- MFC = Main Flight Computer
-- = Rack insert with power + 2 slots
-- ||| = memory relay x2
+* ST = Status & Timers
+* SH = SHip scripts
+* TF = ship Transponder & Fcu 
+* MFC = Main Flight Computer
+* = Rack insert with power + 2 slots
+* ||| = memory relay x2

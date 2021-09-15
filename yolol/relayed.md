@@ -59,3 +59,14 @@ Allows for shorthand access to the main FCU controls without having to use custo
 | :---------------------------- | :----------------- | ------- |
 | Hotspot                       | HS                 | 25      |
 | MaximumHotspot                | MHS                | 50      |
+
+
+### AAS Rangefinder enabler
+
+| Chip 1                        | Chip 2             | Default |
+| :---------------------------- | :----------------- | ------- |
+| AAS                           | RFC1               | 0       |
+| AAS                           | RFC2               | 0       |
+| AAS                           | RFC3               | 0       |
+| AAS                           | RFC4               | 0       |
+| AAS                           | RFC5               | 0       |

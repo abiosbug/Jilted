@@ -1,4 +1,4 @@
-if :auto<1 then g=0 f=0 goto1 end  
+if :auto<1 then g=0 f=0 goto1 end
 r=30 pt=6 yt=6 ep=1.05 ed=5000 et=5000
 xD=:wx-:ex yD=:wy-:ey zD=:wz-:ez Dt=sqrt((xD)^2+(yD)^2+(zD)^2)
 if f<1 then x0=:ex y0=:ey z0=:ez Do=Dt f=1 r=0 end
@@ -15,6 +15,6 @@ if Dt<et then :auto=0 :fwd=0 end if g>0 then goto1 end
 if (pj>-r)*(pj<r)*(px>-r)*(px<r) then g=1 :fwd=100 goto1 end 
 if pj<-r then :pch=pt end if pj>r then :pch=-pt end
 if px>r then :yaw=yt end if px<-r then :yaw=-yt end goto1
-
-//tips to Fixerid. Even 1 cred or kind words appreciated
-//version without cas integration
+// adjusted to work with compass receivers
+// All credits to https://github.com/fixerid/sb-projects 
+// version without cas integration - nav-only.yolol

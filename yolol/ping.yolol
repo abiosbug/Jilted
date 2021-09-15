@@ -17,4 +17,4 @@ IF :Transponder!=-1 THEN :Transponder= -1 GOTO1 END GOTO3
 
 
 
-//Transponder Script -1 turn it off 0 is a 10 sec ping and 1 i on
+//Transponder Script -1: turn off | 0: 10 sec ping | 1: on

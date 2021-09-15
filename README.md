@@ -70,7 +70,47 @@ When using automated lasers, you don't want to risk being caught by one so a ran
 - Added Fuel racks instead of bolted rods
 - Adjustable YOLOL rack labels & color coded chips
 - Plenty of YOLOL sockets to tinker with whilst flying
+- Modest attempt to lightshow using random rangefinders when not in Avoidance mode
+- Glass protection for all thrusters, fuel rods & propellant tanks
+
+
+
+## Credits
+
+I couldn't have even started this project without the help, kind assistance, information and helping hands of a lot of people.
+
+- Singularity Starbase Community - [discord][4]
+  Special thanks to the following people (in no particular order)
+  * Singularity
+  * Sun-cy
+  * CeramicTurtle
+  * DeathPanda
+  * Icehawks
+  * Chucknorris
+  * Eminent
+  * Xhaos
+  * so many more, for the listening, the sharing, the helping
+
+
+- Collaborative Yolol Learning Open Network - [discord][5] - [github][6]
+  * Firestar - Compass & Math lib - [gitlab][7]
+  
+- [Starbase Discord][8]
+- DerPfandadler Material scanner - [github][9]
+- Archeageo Waypoint system - [github][10]
+- Fixerid NAVCAS - [github][3]
+
+
 
 [1]: https://gitlab.com/Firestar99/yolol/-/tree/master/src/compass
 [2]: https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
 [3]: https://github.com/fixerid/sb-projects
+[4]: https://discord.gg/Qtj95qwZ6J
+[5]: https://discord.gg/chkwznZbjW
+[6]: https://github.com/CylonSB/
+[7]: https://gitlab.com/Firestar99/yolol
+[8]: https://discord.gg/xwe8CZXB3c
+[9]: https://github.com/DerPfandadler
+[10]: https://github.com/Archaegeo/Starbase
+
+[]: 

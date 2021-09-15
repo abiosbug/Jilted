@@ -1,0 +1,26 @@
+IF :AAS THEN GOTO1 END IF :LSS<0+:LSS>4 THEN :LSS=0 END
+
+
+:RFC1=0 :RFC2=1 :RFC3=1 :RFC4=1 :RFC5=1 GOTO5+:LSS
+
+
+
+:RFC1=1 :RFC2=0 :RFC3=1 :RFC4=1 :RFC5=1 GOTO9+:LSS
+
+
+
+:RFC1=1 :RFC2=1 :RFC3=0 :RFC4=1 :RFC5=1 GOTO13+:LSS
+
+
+
+:RFC1=1 :RFC2=1 :RFC3=1 :RFC4=0 :RFC5=1 GOTO17+:LSS
+
+
+
+:RFC1=1 :RFC2=1 :RFC3=1 :RFC4=1 :RFC5=0 GOTO1+:LSS
+
+
+// cycle the on state of the center front rangefinders
+// requires extra mapping to have them enabled with AAS
+// as they require unique state names
+// could even have a parametric "on"-duration 
