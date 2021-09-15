@@ -1,4 +1,13 @@
 cht:  ":____"
+ch1: "           "
+ch2: "           "
+ch3: "           "
+ch4: "           "
+p: "[]"
+chhit: "[]"
+e: "  "
+chmiss: "  "
+
 ratr: "    "
 ratt: "  "
 ratl: "    "
@@ -8,21 +17,13 @@ rall: "    "
 rabr: "    "
 rabb: "  "
 rabl: "    "
-ch1: "           "
-ch2: "           "
-ch3: "           "
-ch4: "           "
-p: "[]"
-chhit: "[]"
-e: "  "
-chmiss: "  "
-r: 1000
-rdtr: 0
-rdtt: 0
-rdtl: 0
-rdrr: 0
+
 rdmm: 0
-rdll: 0
+rdtt: 0
+rdtr: 0
+rdrr: 0
 rdbr: 0
 rdbb: 0
 rdbl: 0
+rdtl: 0
+rdll: 0

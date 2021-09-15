@@ -7,5 +7,6 @@ IF:Boot THEN:Laser=0 :Mi=0 :AlwaysOn=0 :GeneratorUnitRateLimit=100 END
 
 
 
-// ReBoot sequence if ship is powered off
+// ReBoot sequence if ship is completely powered off
 // disables all devices and sets max generator rate limit
+// uses twist handle as buttons don't work without power

@@ -7,6 +7,7 @@ kz: 0
 kl: 0
 kr: 0
 ks: 0
+
 ex: 0
 ey: 0
 ez: 0
@@ -16,9 +17,13 @@ fz: 0
 gx: 0
 gy: 0
 gz: 0
+
 ix: 0
 iy: 0
 iz: 0
 jx: 0
 jy: 0
 jz: 0
+hx: 0
+hy: 0
+hz: 0

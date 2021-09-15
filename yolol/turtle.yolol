@@ -1,9 +1,9 @@
-sm=10 hf=50 mx=100 IF :Mi*:S THEN sm=5 END
+sm=10 hf=50 mx=100 IF :Mi*:S THEN sm=5 END IF :TS THEN GOTO6 END
 IF :Mi THEN :FM=hf :YM=sm :YN=-sm :PM=sm :PN=-sm GOTO1 END
 IF :NAV*0^:FWD THEN mx=15 END 
 :FM=100 :YM=mx :YN=-mx :PM=mx :PN=-mx GOTO1
 
-
+t=:TMO/100 :FM=100 :YM=mx*t :YN=-mx*t :PM=mx*t :PN=-mx*t GOTO1
 
 
 
@@ -16,3 +16,4 @@ IF :NAV*0^:FWD THEN mx=15 END
 
 
 // Turn on the mining equipment and custom turtle mode
+// uses an additional lever to scale up the max values if needed

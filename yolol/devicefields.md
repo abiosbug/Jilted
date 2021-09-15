@@ -20,12 +20,15 @@ Overview of all device fields used in the setup
 | :Approach    |     | 0       | button |
 | :Cruise      |     | 100     | button |
 | :RangeFinderDistance | :RD | 995 | rangefinder |
-| :Laser       |     | 0       | laser
-| :Mi          |     | 0       | collector
-| :Fix         |     | 1       | button 
-| :FLOW        |     | 0       | switch
-| :FSC         |     | 3       | switch color
+| :Laser       |     | 0       | laser |
+| :Mi          |     | 0       | collector |
+| :TS          |     | 0       | button | Turtle switch, override turtle mode with lever value
+| :TMO         |     | 0       | lever  | Turtle mode override value: controls the centering speed of Pitch & Yaw
+| :Fix         |     | 1       | button | 
+| :FLOW        |     | 0       | switch |
+| :FSC         |     | 3       | switch color |
 | :UDC         |     | 100     | lever | Up Down Cruise
+| :RLC         |     | 100     | lever | Rightleft Cruise
 | :HM          |     | 0       | button | HoverMode
 | :RFHD        |     |         | rangefinder | HoverMode down rangefinders
 | :HotSpot     |     | 25      | lever | maximum opening angle of laser turrets
@@ -35,18 +38,19 @@ Overview of all device fields used in the setup
 | :NLP         |     | 0       | bulbe | navlights Port
 | :NLS         |     | 0       | bulbe | navlights Starboard
 | :NLT         |     | 0       | bulbe | navlights Top
-| :Transponder |     | -1      | switch
+| :Transponder |     | -1      | switch |
 | :OVR         |     | 0       | button | Override safety 
 | :LaserDance  |     | ""      | text panel |
 | :scan        |     | ""      | textpanel |
 | :OL          |     | 0       | scanner | Active 
-| :OI          |     | 0       | scanner | Index
+| :OI          |     | 0       | scanner | Indexa
 | :OR          |     | 0       | scanner | ScanRresults 
 | :OM          |     | ""      | scanner | Material 
 | :OV          |     | 0       | scanner | Volume 
 | :OS          |     | 0       | scanner | Scan 
 | :____        |     | ""      | text panel | Radar crosshair
 | :Timers      |     | ""      | text panel |
+| :Refuel      |     | 0       | button | Opens the rod doors
 
 
 ### Levers

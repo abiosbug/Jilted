@@ -15,31 +15,29 @@ Files named `.mem.yml` are supposed to be put on memory chips.
 
 | feature    | # chips    | category   |
 | -------    | ---------- | ---------- |
-| approach   | 1*         | navigation |
-| avoidance  | 18+1       | navigation |
-| compass    | 4*+3       | navigation |
-| fix        | 1+1        | ship       |
-| boot       | 1          | ship       |
-| flow       | 1          | ship       |
-| generators | 1          | mining     |
-| hover      | 1*         | ship       |
-| info       | 4          | ship       |
-| ISAN       | 1*         | info       |
-| laserdance | 4*+1       | laser      |
-| autopilot  | 1*         | navigation |
-| navlights  | 1          | ship       |
-| scanner    | 1*         | mining     |
-| ping       | 1          | status     |
-| radar      | 24+3       | status     |
-| ship       | 2+1        | ship       |
-| turtle     | 1          | navigation |
-| consumption| 1          | status     |
-| status     | 1+1        | status     |
-| timers     | 1*         | status     |
-| turtle     | 1          | mining     |
-| safety     | 1*         | safety     |
-| waypoints  | 4*+3       | navigation |
-| relays     | 0+6        | ship       |
+| ship       | 2+1        | ship       |.
+| boot       | 1          | ship       |.
+| fix        | 1+2        | ship       |.
+| flow       | 1          | ship       |.
+| info       | 1          | ship       |.
+| navlights  | 1          | ship       |.
+| hover      | 1*         | ship       |.
+| relays     | 0+6        | ship       |.
+| ping       | 1          | status     |.
+| radar      | 25+3       | status     |.
+| status     | 1+1        | status     |.
+| timers     | 1*         | status     |.
+| safety     | 1*         | safety     |.
+| generators | 1          | mining     |.
+| approach   | 1*         | mining     |.
+| scanner    | 1*         | mining     |.
+| turtle     | 1          | mining     |.
+| ISAN       | 1*         | navigation |.
+| avoidance  | 19+1       | navigation |.
+| compass    | 4*+3       | navigation |.
+| autopilot  | 1*         | navigation |.
+| waypoints  | 4*+3       | navigation |.
+| laserdance | 4*+1       | laser      |.
 |            |            |            |
 | totals     | 19* 58 +20 |            |
 
@@ -123,7 +121,7 @@ There are 2 ways to create a global variable:
 - [Turtle](turtle.yolol)
 - [Pulse](pulse.yolol)
 - [Scanner](scanner.yolol)
-  Based off the [excellent scanner script][5] from DerPfandadler, adjusted the variable names to be prefixed 
+  Based off the [excellent scanner script][5] from DerPfandadler, adjusted the variable names to be prefixed
 - [Generator](generator.yolol)
 
 ## Laser - RED

@@ -1,7 +1,7 @@
-IF t!=:TAAS THEN a=1 ELSE a=0 END
+IF t!=:TAAS THEN a=1 :UDC=2 :RLC=2 ELSE a=0 END
 t=:TAAS
 
-IF t==:TAAS*a THEN :NAAS++ a=0 END t=:TAAS
+IF t==:TAAS*a THEN :NAAS++ a=0 :UDC=100 :RLC=100 END t=:TAAS
 GOTO1
 
 
@@ -14,7 +14,7 @@ GOTO1
 
 
 
-
-
+// slows down the UpDown and RightLeft lever bind speed
 // Checks the number of rangefinder triggers and only adds one to
-// NAAS if no rangefinder triggers anymore
+// NAAS if no rangefinder triggers anymore. uses 2 ticks to avoid
+// rangefinder flicker
