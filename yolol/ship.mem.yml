@@ -1,6 +1,9 @@
 Laser: 0
-Mi: 0
-Approach: 0
-H: 100
-ShipOff: 1
+Mi: 0         # Mining mode
+Appr: 0       # Approach state, controlled by :AS
+H: 100        # 1 Hundred
+M: 1000000    # 1 Million
 NoPilot: 1
+RD: 995       # RangefinderDistance
+HDM: 100      # Hover Distance Max
+DS: 0         # Store calculated value

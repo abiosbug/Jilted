@@ -44,7 +44,7 @@ Whilst the Jilted has alread a best-in-class avoidance system in place, I rework
 The amazing people of the Collaborative Yolol Learning Open Network have created a [compass module][1], see for yourself what this OP thing can do!
 
 ### Status screen
-A text panel showing you if you're in SafeZone, whether you can place a station, the amount of durability errors if any and your current warp class
+A text panel showing you if you're in SafeZone, whether you can place a station, the amount of durability errors if any and your current ship strength factor.
 Another text panel with your estimated Time Left values for Propellant and Fuel
 
 ### 30 Waypoint System

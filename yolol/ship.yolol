@@ -1,5 +1,13 @@
-d=:DS IF:RFC*(:RFC<d) THEN d=:RFC END
-IF :LS*(d<21+:Override) THEN :Laser=1 ELSE :Laser=0 END GOTO1
+:Mi=(:MS>0) :Appr=(:AS>0) GOTO1
+
+
+
+
+
+
+
+
+
 
 
 
@@ -9,3 +17,4 @@ IF :LS*(d<21+:Override) THEN :Laser=1 ELSE :Laser=0 END GOTO1
 
 
 // General ship script, runs non critical buttons and switches
+// Sets global :Dist based on :Distance & :RFC

@@ -1,3 +1,0 @@
-d=:Dance td=2 n="\n" s=" " IF :ShipOff THEN :Mi=0 END
-cd=:Dance2 IF d==1 THEN cd=:Dance1 END
-:LaserDance=cd+n+"HS: "+:Hotspot+n+s+:LaserInfo GOTO1

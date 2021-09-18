@@ -1,20 +1,20 @@
-IF:Boot THEN:Laser=0 :Mi=0 :AlwaysOn=0 :GeneratorUnitRateLimit=100 END
+IF:Boot THEN:Laser=0 :Mi=0 a=:On :On=0 :CW=-1 :GURL=100 ELSE GOTO1 END
+d="." s="  " n="\n" b=""+:PTI+"    OFF" IF a THEN b=:PTI+"re"+:BTI END
+:_="      :_"+b+n+:ITI ::=" POS  ::"+b+n+:NTI :____=":____"+b+n+:RTI
+:Scans=b+n+:SCTI :Status=b+n+:STI :Timers=b+n+:TTI
+b=""+:PTI+s+:BTI IF a THEN b=:PTI+"re"+:BTI END
+:_="      :_"+b+n+:ITI ::=" POS  ::"+b+n+:NTI :____=":____"+b+n+:RTI
+:Scans=b+n+:SCTI :Status=b+n+:STI :Timers=b+n+:TTI
+
+:_+=d ::+=d :____+=d :Scans+=d :Status+=d :Timers+=d
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+:_+=d ::+=d :____+=d :Scans+=d :Status+=d :Timers+=d
+bs="power on" b=""+:PTI+n+s+bs
+:Scans=b+n+:SCTI :Status=b+n+:STI :Timers=b+n+:TTI
+:_="      :_"+b+n+:ITI ::=" POS ::" :____=" :___"+b+n+:RTI
+:On=1 :CW=0 :Fix=1 ::="reset"
 // ReBoot sequence if ship is completely powered off
 // disables all devices and sets max generator rate limit
 // uses twist handle as buttons don't work without power
-:Boot=0 :AlwaysOn=1
+IF :Boot THEN :Boot=0 END

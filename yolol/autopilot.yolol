@@ -1,17 +1,17 @@
 if :auto<1 then g=0 f=0 goto1 end
-r=30 pt=6 yt=6 ep=1.05 ed=5000 et=5000
+r=30 pt=4 yt=4 ep=1.05 ed=5000 et=5000 IF g THEN pt=2 yt=2 END
 xD=:wx-:ex yD=:wy-:ey zD=:wz-:ez Dt=sqrt((xD)^2+(yD)^2+(zD)^2)
 if f<1 then x0=:ex y0=:ey z0=:ez Do=Dt f=1 r=0 end
 da=sqrt((:ex-x0)^2+(:ey-y0)^2+(:ez-z0)^2) d0=d1 d1=Dt v1=d0-d1
 dx=(Do-da)*ep+ed if Dt>dx then s=1 end
-if s>0 then :fwd=0 if abs(v1)<15 then f=0 g=0 s=0 goto1 end end
+// if s>0*abs(v1)<15 then f=0 g=0 s=0 goto1 end
 e=10^6 ds=e*sqrt((:fx-:ex)^2+(:fy-:ey)^2+(:fz-:ez)^2)
 Dd=ds/Dt xs=:ex+Dd*xD/e ys=:ey+Dd*yD/e zs=:ez+Dd*zD/e
 vr=xs-:fx vs=ys-:fy vt=zs-:fz vj=:gx-:ex vk=:gy-:ey vl=:gz-:ez
 va=:fx-:ex vb=:fy-:ey vc=:fz-:ez vx=vk*vc-vb*vl vy=-(vj*vc-va*vl)
 vz=vj*vb+va*vk pj=vr*vj+vs*vk+vt*vl px=vr*vx+vs*vy+vz*vt
 n="\n" :dd=(Do-da)+n+Dt+n+v1+"\npj:"+pj+" px:"+px+" r:"+r+" g:"+g
-if Dt<et then :auto=0 :fwd=0 end if g>0 then goto1 end
+if Dt<et then :auto=0 :fwd=0 end
 if (pj>-r)*(pj<r)*(px>-r)*(px<r) then g=1 :fwd=100 goto1 end 
 if pj<-r then :pch=pt end if pj>r then :pch=-pt end
 if px>r then :yaw=yt end if px<-r then :yaw=-yt end goto1

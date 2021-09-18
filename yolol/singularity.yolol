@@ -1,28 +1,20 @@
+IF 0^:Singularity THEN GOTO1 END :LSS=:FCUForward>50
+:singular=:sing1 GOTO3+:LSS
 
+:LSS=:FCUForward>50
+:singular=:sing2 GOTO6+:LSS
 
+:LSS=:FCUForward>50
+:singular=:sing3 GOTO9+:LSS
 
+:LSS=:FCUForward>50
+:singular=:sing4 GOTO12+:LSS
 
+:LSS=:FCUForward>50
+:singular=:sing5 GOTO15+:LSS
 
-:singular=:sing1
+:LSS=:FCUForward>50
+:singular=:sing6 GOTO18+:LSS
 
-
-
-
-
-:singular=:sing2
-
-
-
-
-
-:singular=:sing3 GOTO1
-
-
-
-
-
-
-
-
-
-
+:LSS=:FCUForward>50
+:singular=:sing7 GOTO1+:LSS

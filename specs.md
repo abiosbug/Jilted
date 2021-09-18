@@ -18,7 +18,7 @@ RIGHT
 
 LEFT                     
 |RA  RA  RA |B-. TCB|  <- avoidance
-|IS |RA  RA  RM |LD |
+|IS |RA  RA  RM | L |
 |   |   |   |   |LD |
 |CM |CMI|CM |HP |LD |
 |||||FIX|FN |AS | = | BS
@@ -26,6 +26,7 @@ LEFT
 
 ````
 
+* L = Laser
 * LD = LaserDance
 * FIX = FIXes for possible turret/turntable bugs
 * HP = Hover Ping

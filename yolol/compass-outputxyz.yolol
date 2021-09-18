@@ -4,15 +4,13 @@ o="m/s\nD: " p="m\n  " q=0 r=60 s=1000 t=r*s u="min" v="h "
 
 f=:ks g=:kl d=o+g/a*a+p b=g/f/t*s e=b%r+u q/=b>=r e=b/t*s+v+e
 q/=::==h+n n=0 h=j+:ex/a*a+k+:ey/a*a+l+:ez/a*a+m+f/a*a+d+e ::=h goto5
-c=:: n=1 goto8+5*(c=="reset")+7*(c=="")
-::=i+"Parsing new Target..." d="98743" w=0 x=-1
+c=""+:: n=1 goto8+5*(c=="reset")+7*(c=="")
+::=i+"Parsing new Target..." d="98743" w=0 x=-1 b=2
 y=c y-=c-- z=5*(y>4)+2*(d>(d-y)) z+=y>z z+=y>z w+=z*10^x++ goto9+y<0
 aa=1 ify=="-"thenaa=-1 c--end
-ab=ac ac=ad ad=w*aa w=0 x=-1 goto9+3*(c<0)
+ab=ac ac=ad ad=w*aa w=0 x=-1 goto9+3*(--b<0)
 :wx=ad :wy=ac :wz=ab goto5
-:kr=2 ae=24 d="\nreseting"
+:kr=20 ae=24 d="\nreseting"
 d+="." ::=d goto14-14*(ae--<0)
 d=i+"Streamer mode" ::=d
 c=:: ::=d goto16-11*(c!=d)+8*(c=="reset")
-
-// outputxyz.yolol

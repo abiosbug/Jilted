@@ -1,6 +1,4 @@
-IF :AS THEN :Approach=1 ELSE :Approach=0 END
-IF :AAS THEN :RFC=1 END IF:MS THEN :Mi=1 ELSE :Mi=0 END
-IF :ShipOff THEN :Mi=0 END GOTO1
+IF 0^:On THEN :Laser=0 :Mi=0 :LS=0 :LD=0 :CW=-1 END GOTO1
 
 
 
@@ -8,4 +6,15 @@ IF :ShipOff THEN :Mi=0 END GOTO1
 
 
 
-// General ship switch script, runs non critical buttons and switches
+
+
+
+
+
+
+
+
+
+
+
+// General ship off script, disables all devices if AlwaysOn is off

@@ -4,43 +4,51 @@ Overview of all device fields used in the setup
 
 | field        | map | default | device       | info                      |
 | -----        | --- | ------- | -----------  | ------------------------- |
-| :AlwaysOn    |     | 1       | warn button  | State for always enabled devices
-| :AlwaysOn    |     | 1       | lid button   | State for always enabled devices
-| :MBC         |     | 1       | button       | Color of the :AlwaysOn lid button, based on INSZ
-| :Boot        |     | 1       | twist handle | Kickstart ship after power loss
-| :NoPilot     |     | 1       | button       | Blink state of the :AlwaysOn button
+| :AlwaysOn    | :ON | 1       | warn button  | State for always enabled devices
+| :AlwaysOn    | :ON | 1       | lid button   | State for always enabled devices
+| :MBC         |     | 1       | button       | MainButtonColor of the lid button, based on INSZ
+| :Boot        |     | 1       | twist handle | Start ship
+| :NoPilot     |     | 1       | button       | Blink state of the :AlwaysOn warn button
 | :AAS         |     | 0       | button       | Asteroid Avoidance Switch |
 | :AS          |     | 0       | button       | Approach Switch           |
 | :LS          |     | 0       | button       | Laser Switch              |
 | :LD          |     | 0       | button       | LaserDance Switch         |
 | :Seat        |     | 0       | button       | Pilot chair slider open   |
-| :Distance    | :DS |         | rangefinder | Central rangefinder     |
-| :Auto        |     | 0       | button | Autopilot
-| :PP          |     |         | rangefinder | Pilot chair rangefinder |
-| :Approach    |     | 0       | button |
-| :Cruise      |     | 100     | button |
+| :RFDS        |     | 0       | rangefinder  | Central rangefinder distance |
+| :Auto        |     | 0       | button       | Autopilot
+| :Dest        |     | `\n\n\n    off` | text panel | Destination coordinates
+| :DTW         |     | `\n\n\n    off` | text panel | Destination waypoint
+| :Deltas      |     | `\n\n\n    off` | text panel | Waypoint deltas
+| :Heading     |     | `\n\n\n    off` | text panel | Waypoint heading
+| :PP          |     |         | rangefinder  | Pilot chair rangefinder |
+| :Appr        |     | 0       | button | Enable automatic approach
+| :Cruise      |     | 100     | button | Sticky forward
+| :Home        |     | 0       | button | Set waypoint 1
+| :Save        |     | 0       | button | Save current coordinates to current waypoint
 | :RangeFinderDistance | :RD | 995 | rangefinder |
-| :Laser       |     | 0       | laser |
+| :Laser       |     | 0       | laser | Laser Active state
 | :Mi          |     | 0       | collector |
 | :TS          |     | 0       | button | Manual turtle switch, override turtle mode with lever value
 | :TMO         |     | 0       | lever  | Turtle mode override value: controls the centering speed of Pitch & 
-
-| :Fix         |     | 1       | button | 
+| :Fix         |     | 0       | button | 
 | :FLOW        |     | 0       | switch |
-| :FSC         |     | 3       | switch color |
+| :alignment%  | :e  | 0       | progress bar | shows the general alignment % from ISAN navigator
+| :distancewp  | :f  | 0       | progress bar | shows the distance to target from ISAN navigator
+| :FSC         |     | 3       | switch color | Allows changing switch lever color based on flow state
 | :HM          |     | 0       | button | HoverMode
-| :RFHD        |     |         | rangefinder | HoverMode down rangefinders
+| :HD          |     | 20      | lever | Hover Distance, doubles as approach distance when not in hover mode |
+| :RFHD        |     |         | rangefinder | HoverMode down rangefinders distance
 | :HotSpot     |     | 25      | lever | maximum opening angle of laser turrets
 | :DaN         |     | 0       | button | next dance
 | :DaP         |     | 0       | button | previous dance
-| :navlights   |     | 0       | button | ship exterior nav lights
+| :NavLights   |     | 0       | button | ship exterior navigation lights
 | :NLP         |     | 0       | bulbe | navlights Port
 | :NLS         |     | 0       | bulbe | navlights Starboard
 | :NLT         |     | 0       | bulbe | navlights Top
 | :Transponder |     | -1      | switch |
 | :OVR         |     | 0       | button | Override safety 
 | :LaserDance  |     | ""      | text panel |
-| :scan        |     | ""      | textpanel |
+| :Scans       |     | ""      | textpanel | Scanner results output
 | :OL          |     | 0       | scanner | Active 
 | :OI          |     | 0       | scanner | Indexa
 | :OR          |     | 0       | scanner | ScanRresults 
@@ -58,7 +66,7 @@ Overview of all device fields used in the setup
 | :Timers      |     | ""      | text panel |
 | :Refuel      |     | 0       | button | Opens the rod doors
 | :singular    |     | `\n    _-_    \n  //    \  \n\\\\\\\\\\\\n  \_  _//\n     -     \n` | text panel | Holds the Singularity logo ASCII
-
+| :k           |     | ` Compass\n.         .\n.         .\n-    +    -\n.         .\n.        by\nFireStar99` | text panel
 
 ### FCU Levers
 

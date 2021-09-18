@@ -1,8 +1,8 @@
-tm=20 n="\n" s="" ss="" as="" de=:DUER wc="Warp: "
+tm=20 n="\n" s="" ss="" as="" de=:DUER wc="SF: "
 ds="All OK" IF de > 0 THEN ds=de+" ERRORS" END ss=n+"! DANGER !"
 IF :INSZ THEN ss=n+"_ SAFE _" :MBC=2 ELSE :MBC=0 END
 st="NO Station" IF :STOK THEN st="Station OK" END
-as=n+:NAAS+" avoided" s=ss+n+st+n+ds+as+n+wc+:WACL :Status=s GOTO1
+as=n+:NAAS+" avoided" s=ss+n+st+n+ds+as+n+wc+:STFA :Status=s GOTO1
 
 
 

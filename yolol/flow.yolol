@@ -9,4 +9,12 @@ IF :FLOW<0 THEN :FlowIn=1 :FlowOut=0 :FSC=4 END GOTO1
 
 
 
+
+
+
+
+
+
+
+
 // Flow switch handling

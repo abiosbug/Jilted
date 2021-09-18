@@ -1,4 +1,4 @@
-i=:wpi d=:wpd s=:wps h=:wph l=:wpl a=10 n=:wpn goto1+(i+d+s+h+l)>0
+i=:wpi d=:wpd s=:save h=:home l=:wpl a=10 n=:wpn goto1+(i+d+s+h+l)>0
 n+=i-d n=n*(n>0)*(n<=a)+a*(n<1)+1*(n>a) n=h+(1-h)*n :wpn=n k=1000 e=20
 i=:wpi d=:wpd o=n/2-(n/2000*k) j="WP"+n+" loading.." goto4-2*((i+d)>0)
 t="No name   \nX:"+:x/k*k+" \nY:"+:y/k*k+" \nZ:"+:z/k*k goto 4.5+n/2
