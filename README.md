@@ -1,12 +1,12 @@
 # Jilted
 _Collection of adjustments done to the Jilted_  
-⚠️ This is still very much work in progress, dont expect to be able to just copy paste yolol and have what's listed below ⚠️  
-_A lot of information is still missing, screenshots, part lists, build info, field names, etc  
-I started this repo for debugging YOLOL as it became unwieldly in-game: no search, no syntax checks, nothing to debug complicated setups.  Having all yolol code, memory variables and relay variables in one folder, working with vscode and the yolol extension has already helped a lot!_
+⚠️ This is still very much work in progress, dont expect to be able to just copy paste some yolol and have what's listed below ⚠️  
+_A lot of information is still missing, screenshots, part lists, build info, field names, etc.  Most if not all changes are written out in the various script files
+I started this repo for debugging YOLOL as it became unwieldly in-game: no search, no syntax checks, nothing to debug complicated setups.  Having all yolol code, memory variables and relay variables in one folder, working with [vscode][vscode] and the [yolol extension][vscode-yolol] has already helped a lot!_
 
 ## Purpose & Background
 This repo serves as a blueprint to keep track of the things I adjusted during my work on the Jilted.  
-This ship, designed by Sun-cy, under the Singularity company, inspired me to add all the features I expect from a luxurious mining ship.
+This ship, designed by Suncy, under (The Singularity)[13] company, inspired me to add all the features I expect from a luxurious mining ship.
 
 ## Functional Mods
 
@@ -41,17 +41,17 @@ The second Dance makes your ship go roll as fast as possible, whilst slowly open
 Whilst the Jilted has alread a best-in-class avoidance system in place, I reworked the resolution of the rangefinders to have 15 unique zones of detection next to the central distance rangefinder.  The motivation was to have some kind of radar display that would show which zone is triggered when the avoidance kicks in.  I also added a counter that counts every avoidance the script has done.  When AAS is off, you'll have a basic cross on the radar.  With AAS enabled, all 15 zones are reporting back to the display in 9 groups.
 
 ### Compass
-The amazing people of the Collaborative Yolol Learning Open Network have created a [compass module][1], see for yourself what this OP thing can do!
+The amazing people of the Collaborative Yolol Learning Open Network have created a [compass module][co-gl], see for yourself what this OP thing can do!
 
 ### Status screen
 A text panel showing you if you're in SafeZone, whether you can place a station, the amount of durability errors if any and your current ship strength factor.
 Another text panel with your estimated Time Left values for Propellant and Fuel
 
 ### 30 Waypoint System
-Any navigation feature works better when you can select and store waypoints without having to use the U tool, so I added the 30 waypoint system from [Archeageo][2]
+Any navigation feature works better when you can select and store waypoints without having to use the U tool, so I added the [30 waypoint system][wp-gh] from [Archeageo][ae-gh]
 
 ### Autopilot and Navigation
-Select a stored waypoint, hit the button and watch the ship align itself and take off on its own.  Will constantly check it's heading along the way and correct when needed.  Still in it's early development as the alignment feature is currently very slow.  Displays Deltas and opening/closing angles as well.  Using the compass first to align yourself manually and only then hitting the button works best for now.  Uses the excellent [NAVCAS setup][3] for the navigation part (NAV)
+Select a stored waypoint, hit the button and watch the ship align itself and take off on its own.  Will constantly check it's heading along the way and correct when needed.  Still in it's early development as the alignment feature is currently very slow.  Displays Deltas and opening/closing angles as well.  Using the compass first to align yourself manually and only then hitting the button works best for now.  Uses the excellent [NAVCAS setup][fi-gh] for the navigation part (NAV)
 
 ### Pilot Presence Detection
 When using automated lasers, you don't want to risk being caught by one so a rangefinder pointed at the pilot works wonders.  Leave the seat and the lasers turn off, that's all it does.  Ofcourse you can add functionality as you see fit.  Includes an override button so you can still risk it if needed, eg. when testing your new Laser Dance script.
@@ -79,7 +79,7 @@ When using automated lasers, you don't want to risk being caught by one so a ran
 
 I couldn't have even started this project without the help, kind assistance, information and helping hands of a lot of people.
 
-- Singularity Starbase Community - [discord][4]
+- Singularity Starbase Community - [discord][ts-dc]
   Special thanks to the following people (in no particular order)
   * Singularity
   * Sun-cy
@@ -92,25 +92,25 @@ I couldn't have even started this project without the help, kind assistance, inf
   * so many more, for the listening, the sharing, the helping
 
 
-- Collaborative Yolol Learning Open Network - [discord][5] - [github][6]
-  * Firestar - Compass & Math lib - [gitlab][7]
+- Collaborative Yolol Learning Open Network - [discord][cy-dc] - [github][cy-gh]
+  * Firestar - Compass & Math lib - [gitlab][fs-gl]
   
-- [Starbase Discord][8]
-- DerPfandadler Material scanner - [github][9]
-- Archeageo Waypoint system - [github][10]
-- Fixerid NAVCAS - [github][3]
+- [Starbase Discord][sb-dc]
+- DerPfandadler Material scanner - [github][dp-gh]
+- Archeageo for the Waypoint system - [github][ae-gh]
+- Fixerid NAVCAS - [github][fi-gh]
 
 
 
-[1]: https://gitlab.com/Firestar99/yolol/-/tree/master/src/compass
-[2]: https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
-[3]: https://github.com/fixerid/sb-projects
-[4]: https://discord.gg/Qtj95qwZ6J
-[5]: https://discord.gg/chkwznZbjW
-[6]: https://github.com/CylonSB/
-[7]: https://gitlab.com/Firestar99/yolol
-[8]: https://discord.gg/xwe8CZXB3c
-[9]: https://github.com/DerPfandadler
-[10]: https://github.com/Archaegeo/Starbase
-
-[]: 
+[co-gl]: https://gitlab.com/Firestar99/yolol/-/tree/master/src/compass
+[wp-gh]: https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
+[fi-gh]: https://github.com/fixerid/sb-projects
+[ts-dc]: https://discord.gg/Qtj95qwZ6J
+[cy-dc]: https://discord.gg/chkwznZbjW
+[cy-gh]: https://github.com/CylonSB/
+[fs-gl]: https://gitlab.com/Firestar99/yolol
+[sb-dc]: https://discord.gg/xwe8CZXB3c
+[dp-gh]: https://github.com/DerPfandadler
+[ae-gh]: https://github.com/Archaegeo/Starbase
+[vscode]: https://code.visualstudio.com/
+[vscode-yolol]: https://marketplace.visualstudio.com/items?itemName=dbaumgarten.vscode-yolol
