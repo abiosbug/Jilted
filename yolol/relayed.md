@@ -76,8 +76,9 @@ Allows for shorthand access to the main FCU controls without having to use custo
 
 | Chip 1                        | Chip 2             | Default |
 | :---------------------------- | :----------------- | ------- |
-| AAS                           | RFC1               | 0       |
-| AAS                           | RFC2               | 0       |
-| AAS                           | RFC3               | 0       |
-| AAS                           | RFC4               | 0       |
-| AAS                           | RFC5               | 0       |
+| AAS                           | RFON               | 0       |
+| AlwaysOn                      | RFC1               | 0       |
+| AlwaysOn                      | RFC2               | 0       |
+| AlwaysOn                      | RFC3               | 0       |
+| AlwaysOn                      | RFC4               | 0       |
+| AlwaysOn                      | RFC5               | 0       |
