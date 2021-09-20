@@ -36,9 +36,9 @@ Overview of all device fields used in the setup
 | :distancewp  | :f  | 0       | progress bar | shows the distance to target from ISAN navigator
 | :FSC         |     | 3       | switch color | Allows changing switch lever color based on flow state
 | :HM          |     | 0       | button | HoverMode
-| :HD          |     | 20      | lever | Hover Distance, doubles as approach distance when not in hover mode |
+| :HD          |     | 15      | lever | Hover Distance, doubles as approach distance when not in hover mode |
 | :RFHD        |     |         | rangefinder | HoverMode down rangefinders distance
-| :HotSpot     |     | 25      | lever | maximum opening angle of laser turrets
+| :HotSpot     |     | 10      | lever | opening angle of laser turrets
 | :DaN         |     | 0       | button | next dance
 | :DaP         |     | 0       | button | previous dance
 | :NavLights   |     | 0       | button | ship exterior navigation lights

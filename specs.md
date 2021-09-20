@@ -5,24 +5,27 @@
 ### Rangefinder Grouping
 
 #### Rangefinder hardware layout
+
+![Rangefinder Layout](assets/rangefinderlayout.png)
+
 ```
-                    []         
-
-        []    []    []    []    []     
-
-  []    []    []    []    []    []    []
-           []    []    []    []
-  []    []                      []    []
-               []   []   []
-  []    []   []            []   []    []
-               []        []
-  []    []          []          []    []
-           []    []    []    []
-  []    []    []    []    []    []    []
-
-        []    []    []    []    []    
-
-                    []    
+                        []         
+  
+ []   []    []    []    []    []    []    []    []
+  
+ []   []    []    []    []    []    []    []    []
+               []    []    []    []
+ []   []    []                      []    []    []
+                   []   []   []
+ []   []    []   []            []   []    []    []
+                   []        []
+ []   []    []          []          []    []    []
+               []    []    []    []
+ []   []    []    []    []    []    []    []    []
+   
+ []   []    []    []    []    []    []    []    []
+    
+                        []    
 ```
 
 #### Layout
@@ -32,27 +35,46 @@ _____/  |  \_____
 _____  .-.  _____
 _____  .-.  _____
 __   \  |  /   __
-  |  |  |  |  |
+  |  |  |  |  |  
 ```
 
 #### Name Groups
 ```
-                    TT         
+                          TT         
 
-        TRC   TR    TT    TL    TLC     
+  TRC   TRC   TR    TR    TT    TL    TL    TLC   TLC     
 
-  TRC   TRC   TR    TB    TL    TLC   TLC
-           TR    TB    TB    TL
-  TR    TR                      TL    TL
-               C    D    C 
-  R     R    R             L    L     L 
-               C         C 
-  RB    BR          C           BL    BL
-           BR    BT    BT    BL
-  BRC   BRC   BR    BT    BL    BLC   BLC
-        BRC   BR    BB    BL    BLC    
+  TRC   TRC   TR    TR    TB    TL    TL    TLC   TLC
+                 TR    TB    TB    TL
+  TR    TR    TR                      TL    TL    TL 
+                     C    D    C 
+  RR    RR    RL   RL            LR   LR    LL    LL 
+                     C         C 
+  RB    RB    BR          C           BL    BL    BL 
+                 BR    BT    BT    BL
+  BRC   BRC   BR    BR    BT    BL    BL    BLC   BLC
 
-                    BB    
+  BRC   BRC   BR    BR    BB    BL    BL    BLC   BLC
+
+                          BB    
+```
+
+#### Radar Display
+
+```
+[][][][][]
+[][][][][]
+[][][][][]
+[][][][][]
+[][][][][]
+```
+
+```
+TRC TR  T   TL  TLC
+TR  TR  T   TL  TL
+RR  RL  C   LR  LL
+BR  BR  B   BL  BL
+BRC BR  B   BL  BLC
 ```
 
 ## YOLOL ROOM
@@ -74,22 +96,22 @@ __   \  |  /   __
 -------------------------------------------------------------
 | main      | nomnom    | flow      | approach  | delta     |
 | memory    | drillbit  | navlight  | scanner   | heading   |
-| switch    | ===a===   | ===a===   | ===a===   | memory    |
+| switch    | ===A===   | ===A===   | ===A===   | memory    |
 |   ship    |  dances   | utility   |  mining   | waypoints |
 -------------------------------------------------------------
-| info      | main      | 3in1      | main      |  ===m===  |
-| singular  | memory    | isan nav  | output    |  ===m===  |
-| memory    | switch    | memory    | delta     |  ===m===  |
+| info      | main      | 3in1      | main      |  ===M===  |
+| singular  | memory    | isan nav  | output    |  ===M===  |
+| memory    | switch    | memory    | delta     |  ===M===  |
 | jilted    | lasers    | compass   | compass   | waypoints |
 -------------------------------------------------------------
-| main      |    TRC    |   auto    |  ===M===  |   DIST    |
-| memory    |    TLC    |  memory   |  ===M===  |  CENTER   |
-| brake     |    BRC    |  ===A===  |  ===M===  |     T     |
-| avoidance | avoidance | navcas    | compass   | avoidance |
+| main      |    TRC    |   auto    |  ===M===  |  ===A===  |
+| memory    |    TLC    |  memory   |  ===M===  |  ===A===  |
+| brake     |    BRC    |  ===A===  |  ===M===  |  ===A===  |
+| avoidance | avoidance | navcas    | compass   | spares    |
 -------------------------------------------------------------
-| abbrev    | safety    |     R     |    TB     | top left  |
-| FCU trans | boot      |     L     |    TOP    | bot right |
-|     |     |         O |     TR    |    BT     | bot left  |
+| abbrev    | safety    |  CENTER   |   LEFT    |    TRL    |
+| FCU trans | boot      |    TOP    |   RIGHT   |    BRC    |
+|     |     |         O |  BOTTOM   |    TLC    |    BLC    |
 | m-relays  | emergency | avoidance | avoidance | avoidance |
 -------------------------------------------------------------
 ```
@@ -102,24 +124,24 @@ __   \  |  /   __
 | |_______| | |_______| | |_______| | |_______| |  ===A===  |
 |  # 1      | # 2       | # 3       | # 4       | spares    |
 -------------------------------------------------------------
-|    BLC    |     TL    |    DIST   |   CROSS   |    TOP    |
-| CROSSHAIR |     BR    |   CENTER  |   RADAR   |    TB     |
-|  ===B===  |     BL    |    TOP    |   DISTS   |   BOTTOM  |
-| avoidance | power     | utility   | fix       | info      |
+|  ===B===  |   GENS    |   HOVER   |   MAIN    |  STATUS   |
+|  ===B===  |  TURTLE   |   ping    |  DEFAULTS |  MEMORY   |
+|  ===B===  |  ===A===  |  ===A===  |   MEMORY  |  TIMERS   |
+| spares    | power     | utility   | fix       | info      |
 -------------------------------------------------------------
-|   RIGHT   |     TL    |    DIST   |   CROSS   |    TOP    |
-|   LEFT    |     BR    |   CENTER  |   RADAR   |    TB     |
-|    TR     |     BL    |    TOP    |   DISTS   |   BOTTOM  |
-| radar     | radar     | radar     | radar mem | radar d   |
+|   DIST    |    CH1    |    CH4    |   CROSS   |  -------  |
+|  CENTER   |    CH2    |    CH5    |   RADAR   |  -------  |
+|    TT     |    CH3    |  DISPLAY  |   RADAR   |  -------  |
+| radar     | crosshair | crosshair | radar mem | space     |
 -------------------------------------------------------------
-|    TB     |  flight   |     BT    |    BR     |    TLC    |
-|    B      |  control  |     TR    |    BL     |    BRC    |
-|    BT     |     +     |     TL    |    TLC    |    BLC    |
-| radar     | transpond | radar d   | radar d   | radar     |
+|    TB     |  flight   |     RL    |    LL     |    BR     |
+|    BB     |  control  |     RR    |    TR     |    BL     |
+|    BT     |     +     |     LR    |    TL     |    BLC    |
+| radar     | transpond | radar     | radar     | radar     |
 -------------------------------------------------------------
-|    TLC    |                       | Distance  | switches  | 
-|    BRC    | MAIN FLIGHT COMPUTER  |           | 9 spares  | 
-|    BLC    |                       |           |     |     | 
+|    TRC    |                       | Distance  | switches  | 
+|    BLC    | MAIN FLIGHT COMPUTER  |           | 9 spares  | 
+|    BRC    |                       |           |     |     | 
 | radar     |                       | bios      | m-relays  | 
 -------------------------------------------------------------
 ```

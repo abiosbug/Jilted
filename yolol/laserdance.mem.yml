@@ -3,5 +3,4 @@ laserdance: ""
 dance: 1
 dance1: "NomNom"
 dance2: "DrillBit"
-MHS: 50
-Hotspot: 20
+MHS: 20       # Maximum opening angle of lasers

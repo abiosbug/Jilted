@@ -54,15 +54,7 @@ Allows for shorthand access to the main FCU controls without having to use custo
 
 | Chip 1                        | Chip 2             | Default |
 | :---------------------------- | :----------------- | ------- |
-| :HD                           | :HoverDistance     | 5       |
-
-
-### LaserDance
-
-| Chip 1                        | Chip 2             | Default |
-| :---------------------------- | :----------------- | ------- |
-| :Hotspot                      | :HS                | 25      |
-| :MaximumHotspot               | :MHS               | 50      |
+| :HD                           | :HoverDistance     | 15      | * doubles as approach distance
 
 
 ### BIOS
