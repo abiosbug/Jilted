@@ -1,12 +1,12 @@
 IF :navlights THEN GOTO2 END GOTO1
-:NLS=1 :NLP=0 :NLT=0
+:NLS=1 :NLP=0
 :NLS=0 :NLP=1
 :NLS=1 :NLP=0
 :NLS=0 :NLP=1
-:NLP=0 :NLT=1
-:NLT=0
-:NLT=1
-:NLT=0
+:NLP=0
+
+
+
 
 
 
@@ -17,4 +17,4 @@ IF :navlights THEN GOTO2 END GOTO1
 :NLP=0 :NLS=1
 :NLS=0
 
-:NLT=1 // navigation lights Port Starboard Top
+// navigation lights Port Starboard Top
