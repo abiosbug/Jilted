@@ -2,6 +2,9 @@
 
 These mappings serve to have nice panel labels as well as concise names in YOLOL
 
+
+#### Translations
+
 | Chip 1                        | Chip 2             | Default |
 | :---------------------------- | :----------------- | ------- |
 | :FuelChamberFuel              | :Fuel              | 0       |
@@ -9,15 +12,17 @@ These mappings serve to have nice panel labels as well as concise names in YOLOL
 | :GasContainerMaxResource      | :Propellant        | 0       |
 | :GasContainerStoredResource   | :MaxP              | 0       |
 | :GeneratorUnitRate            | :Generators        | 0       |
-| :GURL                    | :GeneratorUnitRateLimit | 0       |
 | :RadiationRate                | :Radiators         | 0       |
 | :StoredBatteryPower           | :Battery           | 0       |
+| :RangeFinderCheckDistance     | :DR                | 995     |
 | :stationsAllowed              | :STOK              | 0       |
 | :insideSafezone               | :INSZ              | 0       |
 | :durabilityErrors             | :DUER              | 0       |
 | :strengthFactor               | :STFA              | 0       |
+| :GURL                    | :GeneratorUnitRateLimit | 0       |
 
-### ISAN Navigator bundle
+
+#### ISAN Navigator bundle
 
 | Chip 1                        | Chip 2             | Default |
 | :---------------------------- | :----------------- | ------- |
@@ -25,7 +30,7 @@ These mappings serve to have nice panel labels as well as concise names in YOLOL
 | :ff                           | :distanceWP        | 0       |
 
 
-### Avoidance & Radar
+#### Avoidance & Radar
 
 Controls the characters used to display the crosshair/radar screen
 
@@ -33,9 +38,10 @@ Controls the characters used to display the crosshair/radar screen
 | :---------------------------- | :----------------- | ------- |
 | :CHHit                        | :PX                | "[]"    |
 | :CHMiss                       | :PO                | "  "    |
+| :RangeFinderDistance          | :DS                | 995     |     
 
 
-### FCU Control mapping
+#### FCU Control mapping
 
 Allows for shorthand access to the main FCU controls without having to use custom keybinds
 
@@ -50,14 +56,14 @@ Allows for shorthand access to the main FCU controls without having to use custo
 | :UDN                          | :FCUUpDown         | 0       |
 
 
-### Hover mode
+#### Hover mode
 
 | Chip 1                        | Chip 2             | Default |
 | :---------------------------- | :----------------- | ------- |
 | :HD                           | :HoverDistance     | 15      | * doubles as approach distance
 
 
-### BIOS
+#### BIOS
 
 | Chip 1                        | Chip 2             | Default |
 | :---------------------------- | :----------------- | ------- |
@@ -66,7 +72,7 @@ Allows for shorthand access to the main FCU controls without having to use custo
 | :DS                           | :Distance          | 0       |
 
 
-### AAS Rangefinder enabler
+#### AAS Rangefinder enabler
 
 | Chip 1                        | Chip 2             | Default |
 | :---------------------------- | :----------------- | ------- |

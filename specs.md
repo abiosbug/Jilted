@@ -70,11 +70,11 @@ __   \  |  /   __
 ```
 
 ```
-TRC TR  T   TL  TLC
-TR  TR  T   TL  TL
+TRC TR  TT  TL  TLC
+TR  TR  TB  TL  TL
 RR  RL  C   LR  LL
-BR  BR  B   BL  BL
-BRC BR  B   BL  BLC
+BR  BR  BT  BL  BL
+BRC BR  BB  BL  BLC
 ```
 
 ## YOLOL ROOM
