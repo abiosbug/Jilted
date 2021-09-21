@@ -9,8 +9,8 @@ These mappings serve to have nice panel labels as well as concise names in YOLOL
 | :---------------------------- | :----------------- | ------- |
 | :FuelChamberFuel              | :Fuel              | 0       |
 | :FuelChamberMaxFuel           | :MaxF              | 0       |
-| :GasContainerMaxResource      | :Propellant        | 0       |
-| :GasContainerStoredResource   | :MaxP              | 0       |
+| :GasContainerStoredResource   | :Propellant        | 0       |
+| :GasContainerMaxResource      | :MaxP              | 0       |
 | :GeneratorUnitRate            | :Generators        | 0       |
 | :RadiationRate                | :Radiators         | 0       |
 | :StoredBatteryPower           | :Battery           | 0       |
