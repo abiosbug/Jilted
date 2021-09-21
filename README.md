@@ -84,7 +84,7 @@ I couldn't have even started this project without the help, kind assistance, inf
   * Singularity
   * Sun-cy
   * CeramicTurtle
-  * DeathPanda
+  * DeathPanda - for buying my BP so I could finally craft my ship
   * Icehawks
   * Chucknorris
   * Eminent
