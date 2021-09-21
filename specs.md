@@ -26,6 +26,6 @@ RangeFinders: 76 -> 71 avoidance, 4 hovermode, 1 pilot
 ### Solar panels
 Front: 0  Back: 0
 Up: 64    Down: 64
-Left: 52  Right: 52
+Left: 40  Right: 40
 
 
