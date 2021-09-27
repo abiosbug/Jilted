@@ -22,6 +22,18 @@ These mappings serve to have nice panel labels as well as concise names in YOLOL
 | :GURL                    | :GeneratorUnitRateLimit | 0       |
 
 
+#### Distance
+| Chip 1                        | Chip 2             | Default |
+| :---------------------------- | :----------------- | ------- |
+| :RFTT                         | :Distance          | 0       |
+| :RFTB                         | :Distance          | 0       |
+| :RFBT                         | :Distance          | 0       |
+| :RFBB                         | :Distance          | 0       |
+| :RFTR                         | :Distance          | 0       |
+| :RFTL                         | :Distance          | 0       |
+| :RFBR                         | :Distance          | 0       |
+| :RFBL                         | :Distance          | 0       |
+
 #### ISAN Navigator bundle
 
 | Chip 1                        | Chip 2             | Default |
@@ -82,3 +94,5 @@ Allows for shorthand access to the main FCU controls without having to use custo
 | AlwaysOn                      | RFC3               | 0       |
 | AlwaysOn                      | RFC4               | 0       |
 | AlwaysOn                      | RFC5               | 0       |
+
+####

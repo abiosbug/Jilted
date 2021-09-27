@@ -1,6 +1,6 @@
-roll=50 i=0 IF 0^:LD+(:Dance!=2) THEN GOTO1 END
-hs=(:Hotspot/100)*:MHS/2 di=(hs-:TA1)/hs*i
-ta1=:DA1+di ta2=:DA2+di ta3=:DA3+di :TA1=ta1 :TA2=ta2 :TA3=ta3 :ROL=:H
+i=0 IF 0^:LD+(:Dance!=2) THEN GOTO1 END
+hs=(:Hotspot/100)*:MHS di=(hs-:TA1)/hs*i
+1/(di>0) ta=:DA1+di :TA1=ta :TA2=ta :TA3=ta :ROL=:H
 :ROL=:H IF 0^(:LD*:LS)+(:Dance!=2) THEN GOTO1 END
 :ROL=:H IF 0^(:LD*:LS)+(:Dance!=2) THEN GOTO1 END
 :ROL=:H IF 0^(:LD*:LS)+(:Dance!=2) THEN GOTO1 END
@@ -14,6 +14,6 @@ ta1=:DA1+di ta2=:DA2+di ta3=:DA3+di :TA1=ta1 :TA2=ta2 :TA3=ta3 :ROL=:H
 :ROL=:H IF 0^(:LD*:LS)+(:Dance!=2) THEN GOTO1 END
 :ROL=:H IF 0^(:LD*:LS)+(:Dance!=2) THEN GOTO1 END
 :ROL=:H IF 0^(:LD*:LS)+(:Dance!=2) THEN GOTO1 END
-:ROL=:H IF 0^(:LD*:LS)+(:Dance!=2)+(i>:MHS) THEN GOTO1 END GOTO3
+:ROL=:H IF 0^(:LD*:LS)+(:Dance!=2)+(i>:MHS) THEN GOTO1 END GOTO2
 // roll = Maximum Roll Rate, :H=100
 // Laser Animationscript Drill - rolls and opens up the lasers

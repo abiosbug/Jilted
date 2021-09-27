@@ -1,16 +1,16 @@
 roll=50 i=0 IF 0^:LD+(:Dance!=1) THEN GOTO1 END
-hs=(:Hotspot/100)*:MHS ta1=:DA1+hs ta2=:DA2+hs ta3=:DA3+hs
-:TA1=ta1 :TA2=ta2 :TA3=ta3 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
-:ROL=5 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
+hs=(:Hotspot/100)*:MHS 1/(hs>0) ta=:DA1+hs :TA1=ta :TA2=ta :TA3=ta
+IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
+:ROL=4 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
-:ROL=5 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
+:ROL=4 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
 i++ IF i>2 THEN i=0 GOTO1 END
 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
-:ROL=20 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
+:ROL=12 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END
 IF 0^(:LD*:LS)+(:Dance!=1) THEN GOTO1 END

@@ -4,6 +4,18 @@ _Collection of adjustments done to the Jilted_
 _A lot of information is still missing, screenshots, part lists, build info, field names, etc.  Most if not all changes are written out in the various script files
 I started this repo for debugging YOLOL as it became unwieldly in-game: no search, no syntax checks, nothing to debug complicated setups.  Having all yolol code, memory variables and relay variables in one folder, working with [vscode][vscode] and the [yolol extension][vscode-yolol] has already helped a lot!_
 
+## File naming conventions
+
+See also [yolol/README.md]  
+[devicefields.md] overview of devicefields 
+[relayed.md] relayed variables 
+
+## TOC
+
+
+
+
+
 ## Purpose & Background
 This repo serves as a blueprint to keep track of the things I adjusted during my work on the Jilted.  
 This ship, designed by Suncy, under (The Singularity)[13] company, inspired me to add all the features I expect from a luxurious mining ship.
@@ -21,6 +33,10 @@ I was bothered by the way the cockpit gets in your view, especially after finish
 
 ### PID controlled Approach
 Approaching an object based on a Rangefinder measurement requires a constant feedback loop, as your ship behaves different to FCU inputs depending on its load.  A PID loop is the perfect match to tackle this problem, so you can have a self-correcting system that works within the given variation boundaries.  Added 5 other central rangefinders to the Distance calculation so you have it easier keeping the asteroid locked on.
+
+### Solar Panels
+
+
 
 ### Hover Mode
 The Jilted comes equipped with a warp core to allow for moon mining trips, so I added 4 rangefinders on the bottom of the ship and a slider to adjust the desired hover height.  Uses the same PID controlled system as the Approach feature

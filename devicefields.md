@@ -1,6 +1,9 @@
 ## Device fields
 
 Overview of all device fields used in the setup
+The map column indicates if the value is translated via memory relays  
+
+
 
 | field        | map | default | device       | info                      |
 | -----        | --- | ------- | -----------  | ------------------------- |
@@ -29,7 +32,7 @@ Overview of all device fields used in the setup
 | :Laser       |     | 0       | laser | Laser Active state
 | :Mi          |     | 0       | collector |
 | :TS          |     | 0       | button | Manual turtle switch, override turtle mode with lever value
-| :TMO         |     | 0       | lever  | Turtle mode override value: controls the centering speed of Pitch & 
+| :TMO         |     | 50       | lever  | Turtle mode override value: controls the centering speed of Pitch & Yaw 16 < :TMO < 100
 | :Fix         |     | 0       | button | 
 | :FLOW        |     | 0       | switch |
 | :alignment%  | :e  | 0       | progress bar | shows the general alignment % from ISAN navigator
@@ -48,6 +51,7 @@ Overview of all device fields used in the setup
 | :Transponder |     | -1      | switch |
 | :OVR         |     | 0       | button | Override safety 
 | :LaserDance  |     | ""      | text panel |
+| :Turtle      |     | "\n\n\n    off" | text panel | Shows current turtle mode info
 | :Scans       |     | ""      | textpanel | Scanner results output
 | :OL          |     | 0       | scanner | Active 
 | :OI          |     | 0       | scanner | Indexa

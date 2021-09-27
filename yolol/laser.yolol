@@ -1,10 +1,10 @@
 td=2 n="\n" s=" " IF :LS*(:DS<21+:OVR) THEN :Laser=1 END
 cd=:Dance2 IF :Dance==1 THEN cd=:Dance1 END
-IF :LD*:LS THEN GOTO7 END :Laser=0 GOTO1
-IF 0^:LD THEN :LaserDance="OFF"+n+cd+n+:LaserInfo GOTO1 END
+IF :LD*:LS THEN GOTO7 END :Laser=0
+IF 0^:LD THEN :LaserDance=:PTI+s+"OFF"+n+s+cd+n+:LaserInfo GOTO1 END
 
 // LaserDance enabled
-:LaserDance=""+cd+n+"HS: "+:Hotspot+n+s+:LaserInfo GOTO1
+:LaserDance=:PTI+s+cd+n+"HS: "+:Hotspot+n+s+:LaserInfo GOTO1
 
 
 

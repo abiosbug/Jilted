@@ -1,20 +1,21 @@
-sm=10 hf=50 mx=100 IF :Mi*:LS THEN sm=5 END IF :TS THEN GOTO6 END
-IF :Mi THEN :FM=hf :YM=sm :YN=-sm :PM=sm :PN=-sm GOTO1 END
-:FM=100 :YM=mx :YN=-mx :PM=mx :PN=-mx GOTO1
+sm=10 hf=50 mx=100 tu=0 IF :Mi*:LS THEN sm=5 END IF :TS THEN GOTO6 END
+IF :Mi THEN :FM=hf :YM=sm :YN=-sm :PM=sm :PN=-sm tu=:TUON GOTO7 END
+:FM=100 :YM=mx :YN=-mx :PM=mx :PN=-mx GOTO7
 
 // turtle lever mode
-t=:TMO/100 :FM=100 :YM=:TMO :YN=-:TMO :PM=:TMO :PN=-:TMO GOTO1
+t=:TMO :FM=t :YM=t :YN=-t :PM=t :PN=-t tu=:TUMA GOTO13
+IF NOT tu THEN :Turtle=:TUOF GOTO1 END :Turtle=tu GOTO10
+
+// Turtle ON
+:Turtle=:TUO1 GOTO1
 
 
+// Manual Turtle
+:Turtle=:TUM1
 
+:Turtle=:TUM2
 
-
-
-
-
-
-
-
-
+:Turtle=:TUM3
+// needs display and FWD BCK control !!
 // Turn on the mining equipment and custom turtle modes
 // uses an additional lever to scale up the max values if needed

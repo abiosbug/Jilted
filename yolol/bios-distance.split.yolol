@@ -1,0 +1,27 @@
+d=:DS IF :RFC*(:RFC<d) THEN d=:RFC END :DS=d GOTO1
+d=:DS IF :RFTB*(:RFTB<d) THEN d=:RFTB END :DS=d GOTO1
+d=:DS IF :RFRL*(:RFRL<d) THEN d=:RFRL END :DS=d GOTO1
+d=:DS IF :RFLR*(:RFLR<d) THEN d=:RFLR END :DS=d GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Basis IO Script, don't pull this chip
+// Keeps the lowest value of all central rangefinders stored in :DS
+
+
+Hi,
+
+I tried my first built version of the Jilted BB out for testing and had a very frustrating hours long session of bugs with the ship.  Everytime I relogged in, it behaved differently, I tried restarting the game and the computer as well. Sometimes it wouldn't even take off.  I couldn't even use the ships inventory at some point, having to spam left mouse button to craft something. it even led to me sending an angry bug report yesterday as I had to abandon the ship after dropping my last station next to it so I could try to recover later.
+The build tool and blueprint features where causing serious game lags as well, making everything even more difficult to repair.  I ended up transferring back to Origin.
+
+Can I please have the ship vouched for?  I've spent a lot of time in the design and shared everything on github as well, I'll definitely mention this in the Readme!  I did not put any components in the BP that require any unobtainable ore as well
