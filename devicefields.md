@@ -19,7 +19,7 @@ The map column indicates if the value is translated via memory relays
 | :TA1         |     | -10     | turret       | Left Laser Turret Angle   |
 | :TA2         |     | -10     | turret       | Top Laser Turret Angle    |
 | :TA3         |     | -10     | turret       | Right Laser Turret Angle  |
-| :Seat        |     | 0       | button       | Pilot chair slider open   |
+| :Seat        |     | 0       | button       | Pilot Presence chair slider open |
 | :RFDS        |     | 0       | rangefinder  | Central rangefinder distance |
 | :Auto        |     | 0       | button       | Autopilot
 | :Dest        |     | `\n\n\n    off` | text panel | Destination coordinates
@@ -34,6 +34,7 @@ The map column indicates if the value is translated via memory relays
 | :RangeFinderDistance | :RD | 995 | rangefinder |
 | :Laser       |     | 0       | laser | Laser Active state
 | :Mi          |     | 0       | collector |
+| :SA          |     | -0.4    | turret | Scanner turret angle
 | :TS          |     | 0       | button | Manual turtle switch, override turtle mode with lever value
 | :TMO         |     | 50      | lever  | Turtle mode override value: controls the centering speed of Pitch & Yaw 16 < :TMO < 100
 | :Fix         |     | 0       | button | 

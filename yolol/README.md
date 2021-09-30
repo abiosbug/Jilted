@@ -6,7 +6,7 @@ I've grouped the YOLOL sections per logical feature and color coded them.  I try
 
 Files names `.split.yolol` are expected to have each line run on a separate chip for maximum performance.  However you can split them up as you see fit if performance is less critical.  
 Files named `.mem.yml` are supposed to be put on memory chips.  
-`relayed.yml` contains the Memory Relay mapping values.
+[`relayed.yml`](../relayed.md) contains the Memory Relay mapping values.
 
 ## Overview
 

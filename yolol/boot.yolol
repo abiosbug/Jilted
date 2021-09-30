@@ -13,7 +13,7 @@ b=""+:PTI+s+:BTI IF a THEN b=:PTI+"re"+:BTI END
 bs="power on" b=""+:PTI+n+s+bs
 :Scans=b+n+:SCTI :Status=b+n+:STI :Timers=b+n+:TTI
 :_="      :_"+b+n+:ITI ::=:KPTI :____=:CHT+b+n+:RTI
-:On=1 :CW=0 :Fix=1 ::="reset"
+:On=1 :CW=0 :Fix=1 :RFDON=1 ::="reset"
 // ReBoot sequence if ship is completely powered off
 // disables all devices and sets max generator rate limit
 // uses twist handle as buttons don't work without power
