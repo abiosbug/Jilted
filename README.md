@@ -5,9 +5,9 @@ _A lot of information is still missing, screenshots, part lists, build info, fie
 
 ## File naming conventions
 
-See also [yolol/README.md] for all Yolol related info
-[devicefields.md] overview of devicefields used
-[relayed.md] relayed variables for translating and linking
+See also [yolol/README.md](yolol/README.md) for all Yolol related info
+[devicefields.md](devicefields.md) overview of devicefields used
+[relayed.md](relayed.md) relayed variables for translating and linking
 
 ## TOC
 
