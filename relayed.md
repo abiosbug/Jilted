@@ -89,10 +89,13 @@ Allows for shorthand access to the main FCU controls without having to use custo
 | Chip 1                        | Chip 2             | Default |
 | :---------------------------- | :----------------- | ------- |
 | AAS                           | RFON               | 0       |
-| AlwaysOn                      | RFC1               | 0       |
-| AlwaysOn                      | RFC2               | 0       |
-| AlwaysOn                      | RFC3               | 0       |
-| AlwaysOn                      | RFC4               | 0       |
-| AlwaysOn                      | RFC5               | 0       |
+| RFON                          | RFDON              | 0       |
+| RFDON                         | RFC1               | 0       |
+| RFDON                         | RFC2               | 0       |
+| RFDON                         | RFC3               | 0       |
+| RFDON                         | RFC4               | 0       |
+| RFDON                         | RFC5               | 0       |
+| RFSL                          | RangefinderSearchLength | 1000 |
+
 
 ####

@@ -16,6 +16,9 @@ The map column indicates if the value is translated via memory relays
 | :AS          |     | 0       | button       | Approach Switch           |
 | :LS          |     | 0       | button       | Laser Switch              |
 | :LD          |     | 0       | button       | LaserDance Switch         |
+| :TA1         |     | -10     | turret       | Left Laser Turret Angle   |
+| :TA2         |     | -10     | turret       | Top Laser Turret Angle    |
+| :TA3         |     | -10     | turret       | Right Laser Turret Angle  |
 | :Seat        |     | 0       | button       | Pilot chair slider open   |
 | :RFDS        |     | 0       | rangefinder  | Central rangefinder distance |
 | :Auto        |     | 0       | button       | Autopilot
@@ -32,7 +35,7 @@ The map column indicates if the value is translated via memory relays
 | :Laser       |     | 0       | laser | Laser Active state
 | :Mi          |     | 0       | collector |
 | :TS          |     | 0       | button | Manual turtle switch, override turtle mode with lever value
-| :TMO         |     | 50       | lever  | Turtle mode override value: controls the centering speed of Pitch & Yaw 16 < :TMO < 100
+| :TMO         |     | 50      | lever  | Turtle mode override value: controls the centering speed of Pitch & Yaw 16 < :TMO < 100
 | :Fix         |     | 0       | button | 
 | :FLOW        |     | 0       | switch |
 | :alignment%  | :e  | 0       | progress bar | shows the general alignment % from ISAN navigator
@@ -54,8 +57,8 @@ The map column indicates if the value is translated via memory relays
 | :Turtle      |     | "\n\n\n    off" | text panel | Shows current turtle mode info
 | :Scans       |     | ""      | textpanel | Scanner results output
 | :OL          |     | 0       | scanner | Active 
-| :OI          |     | 0       | scanner | Indexa
-| :OR          |     | 0       | scanner | ScanRresults 
+| :OI          |     | 0       | scanner | Index
+| :OX          |     | 0       | scanner | ScanResults
 | :OM          |     | ""      | scanner | Material 
 | :OV          |     | 0       | scanner | Volume 
 | :OS          |     | 0       | scanner | Scan 

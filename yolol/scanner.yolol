@@ -1,12 +1,20 @@
-j="\nMat|Stacks" o=j a=" Ore" b="\n" d="o" e="." h="ium" TO=20 
-:scans-=s s=e :scans=s+:scans f=1728000 :Reset=1 goto2+:Mi
-:scans-=s s=d :scans=s+:scans g="ite" i=0 :OI=0 :OX=0 
-:OS=1 tv=0 o=j c=" Crystal" i++ if i>TO then goto9 end goto5-:OS
+j="\nMat|Stacks" o=j a=" Ore" b="\n" d="o" e="." h="ium" TO=20
+:scans-=s s=e :scans=s+:scans f=1728000 :Reset=1 :OL=:Mi goto2+:Mi
+:scans-=s s=d :scans=s+:scans g="ite" i=0 :OI=0 :OX=0
+:OS=1 tv=0 o=j c=" Crystal" i++ if i>TO then goto9 end goto6-:OS
 i/=:OX :OI=0 v=:OV/f*1000 tv+=v o+=b+"- "+(:OM-a-c-g-h)+"|"+v
 i/=:OX :OI=1 v=:OV/f*1000 tv+=v o+=b+"- "+(:OM-a-c-g-h)+"|"+v
 i/=:OX v=tv at="\nCLass:"+(4+v>10+v>11+v>18+v>26+v>124+v>270)
 i/=:OX :scans=s+o+b+"Total Stacks:"+tv+at :OS=0 :Reset=1 goto2+:Mi
 w="\n !WARNING!" i/=:OX :scans=s+w+"\n\n «TIMEOUT»\n"+w goto2+:Mi
-:scans=s+w+"\n\n  Nothing\n   Found\n"+w goto2+:Mi 
+:scans=s+w+"\n\n  Nothing\n   Found\n"+w goto2+:Mi
+
+
+
+
+
+
+
+
 // adjusted to 2 char var names, removed ore collector power toggle
 // https://github.com/DerPfandadler/Pfandadler-YOLOL
