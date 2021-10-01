@@ -1,7 +1,7 @@
 # Jilted
 _Collection of adjustments done to the Jilted_  
 ⚠️ This is still very much work in progress, dont expect to be able to just copy paste some yolol and have what's listed below ⚠️  
-_A lot of information is still missing, screenshots, part lists, build info, field names, etc.  Most if not all changes are written out in the various script files
+_A lot of information is still missing, screenshots, part lists, build info, field names, etc.  Most if not all changes are written out in the various script files_
 
 | side   | front |
 | :----- | :------ |
