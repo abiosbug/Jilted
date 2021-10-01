@@ -3,6 +3,14 @@ _Collection of adjustments done to the Jilted_
 ⚠️ This is still very much work in progress, dont expect to be able to just copy paste some yolol and have what's listed below ⚠️  
 _A lot of information is still missing, screenshots, part lists, build info, field names, etc.  Most if not all changes are written out in the various script files
 
+| side   | front |
+| :----- | :------ |
+|![](assets/Jilted-bridge.png)|![](assets/Jilted-cockpit.png)|
+| bridge | cockpit |
+|![](assets/Jilted-bridge.png)|![](assets/Jilted-cockpit.png)|
+| yolol room | refueling |
+|![](assets/Jilted-yolol.png)|![](assets/Jilted-refuel.png)|
+
 ## File naming conventions
 
 See also [yolol/README.md](yolol/README.md) for all Yolol related info
@@ -17,28 +25,28 @@ See also [yolol/README.md](yolol/README.md) for all Yolol related info
 
 ## Purpose & Background
 This repo serves as a blueprint to keep track of the things I adjusted during my work on the Jilted.  
-This ship, designed by Suncy, under (The Singularity)[13] company, inspired me to add all the features I expect from a feature rich exploration and mining ship.  
+This ship, designed by Suncy, under (The Singularity)[ts-dc] company, inspired me to add all the features I expect from a feature rich exploration and mining ship.  
 I started this repo initially to debug YOLOL as it became unwieldly in-game: no search, no syntax checks, nothing to deal with complicated setups.  Having all yolol code, memory variables and relay variables in one folder, working with [vscode][vscode] and the [yolol extension][vscode-yolol] has proved to be essential.
 
 ## Functional Mods
 
 ### T2/T3 Drive Train
-Changed all nozzles to T3 for that extra punch without sacrificing on consumptiop.
+Changed all nozzles to T3 for that extra punch without sacrificing on consumption.
 
 ### Ninja Turtle mode
-Enabling the Mining mode activates the ships Turtle mode by default, ideal for dense asteroid fields.  When the lasers are activte, your movements slow down even more so you can be realy precise.  Added an override button and lever as well for precise manual turtle control.
+Enabling the Mining mode activates the ships Turtle mode by default, ideal for dense asteroid fields.  When the lasers are active, your movements slow down even more for more precision.  Also has an override button and lever for manual turtle control.
 
-### Pilot chair
-I was bothered by the way the cockpit gets in your view, especially after finishing up on an asteroid I lacked the screen estate to search for the next one.  In came a slider, bolted to the frame, so the pilot chair can be bolted to the moving arm.  Uses a ducted slider to transfer power to the chair.  Added duplicatre info panels so you can still keep track of your ships vitals and heading.
+### Extendable pilot chair
+I miss the broad view, especially when searching for the next asteroid.  So I added a slider, bolted to the frame, with the pilot chair bolted to the moving arm and used a duct slider to transfer power to the chair.  Added duplicatre info panels so you can still keep track of your ships vitals and heading when extended.
 
 ### PID controlled Approach
 Approaching an object based on a Rangefinder measurement requires a constant feedback loop, as your ship behaves different to FCU inputs depending on its load.  A PID loop is the perfect match to tackle this problem, so you can have a self-correcting system that works within the given variation boundaries.  Added 5 other central rangefinders to the Distance calculation so you have it easier keeping the asteroid locked on.  
 
-### Solar Panels
-I ended up adding lots of solar panels to extend your rod life time significantly.  Provides some extra armor as added bonus.
+### Solar Panels & Propulsion
+I ended up adding lots of solar panels to extend make the rods lifetime significantly.  Provides extra armor as added bonus.  Moved all fuel rods to racks outside of the frame and added 4 more medium propellant tanks for a total of 76.000.000 propellant.
 
 ### Hover Mode
-The Jilted comes equipped with a warp core to allow for moon mining trips, so I added 4 rangefinders on the bottom of the ship and a slider to adjust the desired hover height.  Uses the same PID controlled system as the Approach feature
+The Jilted comes equipped with a warp core to allow for moon mining trips, so I added 4 rangefinders on the bottom of the ship and a slider to adjust the desired hover height.  Uses the same PID controlled system as the Approach feature.
 
 ### YOLOL room
 I wanted to have a very accessible YOLOL setup as I intend to tinker a lot with it.  I reorganized the racks so there are plenty of chips in sockets as well as color coded the racks by functionality.  I also added plenty of spare chips, racks and sockets so I'd never be shy of empty chips or space to work on the next YOLOL thing.  
