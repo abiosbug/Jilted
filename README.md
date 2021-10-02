@@ -25,7 +25,7 @@ See also [yolol/README.md](yolol/README.md) for all Yolol related info
 
 ## Purpose & Background
 This repo serves as a blueprint to keep track of the things I adjusted during my work on the Jilted.  
-This ship, designed by Suncy, under (The Singularity)[ts-dc] company, inspired me to add all the features I expect from a feature rich exploration and mining ship.  
+This ship, designed by Suncy, under [The Singularity][ts-dc] company, inspired me to add all the features I expect from a feature rich exploration and mining ship.  
 I started this repo initially to debug YOLOL as it became unwieldly in-game: no search, no syntax checks, nothing to deal with complicated setups.  Having all yolol code, memory variables and relay variables in one folder, working with [vscode][vscode] and the [yolol extension][vscode-yolol] has proved to be essential.
 
 ## Functional Mods
